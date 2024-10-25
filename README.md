@@ -5,7 +5,7 @@ Estas son simplemente mis anotaciones personales sobre cómo instalar y configur
 [![Donate](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://paypal.me/ravensystem)
 
 ## Crear USB de Instalación para instalar sin TPM 2.0
-- Es necesario un Windows (Real o virtual) y un pendrive de al menos 8GB de capacidad.
+- Es necesario un equipo con Windows (Real o virtual) y un pendrive de al menos 8GB de capacidad.
 - Descargar los creadores de medios para Windows 10 y Windows 11 de [Windows Installation Media Creator](https://support.microsoft.com/es-es/windows/crear-medios-de-instalación-de-windows-99a58364-8c02-206f-aa6f-40c3b507420d)
 - Usar el Creador de medios de Windows 11 y crear un USB de instalación.
 - Copiar el archivo del pendrive `\sources\install.esd` al ordenador.
