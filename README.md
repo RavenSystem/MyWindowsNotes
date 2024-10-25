@@ -21,7 +21,7 @@ Estas son simplemente mis anotaciones personales sobre cómo instalar y configur
 - No introducir la clave de activación de Windows (Mejor activar Windows una vez instalado y configurado, aunque se puede dejar sin activar y todo funcionará sin restricciones, menos la parte de personalizar los colores y el fondo de escritorio).
 - Una vez que se haya instalado, se ejecutará el asistente inicial de configuración, preguntando el país:
     - Pulsar `Shift + F10` para abrir un Terminal.
-    - Ejecutar el comando (Si la distribución del teclado no permite escribir la barra `\`, se puede copiar y pegar con el ratón una del propio Terminal):
+    - Ejecutar el siguiente comando (Si la distribución actual del teclado no permite escribir la barra `\`, se puede copiar y pegar con el ratón una del propio Terminal):
 ```shell
 OOBE\BYPASSNRO
 ```
