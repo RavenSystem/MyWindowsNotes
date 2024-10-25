@@ -172,6 +172,7 @@ gpedit.msc
 - Pulsar: Aplicar.
 
 ## Configurar el gestor de procesos para priorizar los de primer plano
+(Fuente: https://www.xbitlabs.com/win32priorityseparation-performance/)
 - Abrir un Terminal y ejecutar:
 ```shell
 regedit
