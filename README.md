@@ -18,6 +18,7 @@ Estas son simplemente mis anotaciones personales sobre cómo instalar y configur
 
 ## Instalar Windows
 - Arrancar desde el USB de instalación.
+  - Para Macs Intel, usar el Asistente de Instalación BoorCamp con el archivo ISO correspondinte.
 - No introducir la clave de activación de Windows (Mejor activar Windows una vez instalado y configurado, aunque se puede dejar sin activar y todo funcionará sin restricciones, menos la parte de personalizar los colores y el fondo de escritorio).
 - Una vez que se haya instalado, se ejecutará el asistente inicial de configuración, preguntando el país:
     - Pulsar `Shift + F10` para abrir un Terminal.
