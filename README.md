@@ -118,7 +118,7 @@ bcedit /set hypervisorlaunchtype on
 
 ## Desactivar la ejecución en segundo plano de los componentes del sistema
 - Abrir Configuración -> Sistema -> Componentes del sistema.
-- Para cada uno delos componentes, pulsar el icono de los 3 puntos (...) a la derecha -> Opciones avanzadas.
+- Para cada uno de los componentes, pulsar el icono de los 3 puntos `···` a la derecha -> Opciones avanzadas.
     - Establecer en Nunca la opción de los Permisos de componente en segundo plano.
 
 ## Desactivar algunas opciones visuales
