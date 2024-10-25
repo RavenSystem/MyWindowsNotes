@@ -144,7 +144,7 @@ powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 powercfg -attributes SUB_PROCESSOR CPMINCORES -ATTRIB_HIDE
 powercfg.cpl
 ```
-- El plan recomendado para maximizar la potencia del equipo es: Equilibrado.
+- El plan recomendado para maximizar la potencia del equipo es: **Equilibrado**.
 - Pulsar: Cambiar la configuración del plan (La configuración sólo se aplica al plan seleccionado).
     - Pulsar: Cambiar la configuración avanzada de energía.
         - Ir a: Administración de energía del procesador, y configurar:
