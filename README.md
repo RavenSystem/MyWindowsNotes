@@ -53,13 +53,13 @@ ipconfig /release
 - Select option `3`.
 - Check: Only show installed apps.
 - Select:
-- Microsoft.Edge
-- Microsoft.GetHelp
-- Microsoft.MSPaint
-- Microsoft.Windows.DevHome
-- Microsoft.YourPhone
-- Microsoft.ZuneMusic
-- MicrosoftWindows.CrossDevice
+  - Microsoft.Edge
+  - Microsoft.GetHelp
+  - Microsoft.MSPaint
+  - Microsoft.Windows.DevHome
+  - Microsoft.YourPhone
+  - Microsoft.ZuneMusic
+  - MicrosoftWindows.CrossDevice
 - Press Confirm.
 
 ## Enable automatic user login (Autologin)
@@ -102,7 +102,7 @@ msinfo32
 bcedit /set hypervisorlaunchtype off
 ```
 - Restart your computer.
-- Note: To revert this change, open a Terminal and run:
+  - Note: To revert this change, open a Terminal and run:
 ```shell
 bcedit /set hypervisorlaunchtype on
 ```
