@@ -191,7 +191,7 @@ Win32PrioritySeparation
     - Pulsar Configurar y seleccionar: Deshabilitar protección del sistema.
 
 ## Desactivar el uso del disco como RAM cuando haga falta (Opcional)
-- Sólo debe desactivarse si el equipo tiene memoria RAM de sobra (16GB o más).
+- Sólo debe desactivarse si el equipo tiene memoria RAM de sobra (16GB o más, dependiendo del software que se vaya a ejecutar).
 - Abrir Configuración -> Sistema -> Configuración avanzada del sistema.
 - En Rendimiento, pulsar Configuración.
 - En la pestaña: Opciones avanzadas, pulsar Cambiar.
