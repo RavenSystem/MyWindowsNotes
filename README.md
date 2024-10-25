@@ -38,7 +38,7 @@ ipconfig /release
 - Una vez terminado todo, conectarlo a Internet.
 - Abrir Configuración -> Windows Update -> Buscar actualizaciones, e instalarlas. Y reiniciar, aunque no lo pida.
 
-## Eliminar basura de Windows
+## Eliminar software no necesario de Windows
 (Fuente: https://github.com/Raphire/Win11Debloat)
 - Abrir un Terminal como Administrador (Botón derecho sobre su icono y Ejecutar como administrador) y ejecutar:
 ```shell
