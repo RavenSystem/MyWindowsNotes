@@ -76,7 +76,7 @@ DevicePasswordLessBuildVersion
 ```shell
 netplwiz
 ```
-- Desactivar la opción de que los usuarios tienen que introducir la contraseña.
+- Desactivar la opción de que los usuarios tienen que introducir la contraseña y seguir las instrucciones en pantalla.
 
 ## Desactivar la integridad de la memoria
 - Incrementa el rendimiento del equipo, a cambio de tener el nivel de seguridad de Windows 10.
