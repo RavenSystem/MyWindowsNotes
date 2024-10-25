@@ -1,10 +1,10 @@
 # My Notes about how to Install and Configure Windows 11
 
+[ [Spanish](README_ES.md) ]
+
 [![Donate](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://paypal.me/ravensystem)
 
 These are just my personal notes on how to install and configure a Windows 11 PC to take full advantage of all its power, for gaming, VR, heavy workflows...
-
-[Spanish](README_ES.md)
 
 **I am not responsible for any possible damage or data loss that may occur.**
 
