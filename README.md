@@ -173,7 +173,9 @@ gpedit.msc
 
 ## Configurar el gestor de procesos para priorizar los de primer plano
 - Abrir un Terminal y ejecutar:
+```shell
 regedit
+```
 - Ir a la clave:
 ```
 HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\PriorityControl
