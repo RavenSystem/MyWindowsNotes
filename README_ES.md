@@ -2,9 +2,9 @@
 
 [![Donate](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://paypal.me/ravensystem)
 
-Estas son simplemente mis anotaciones personales sobre cómo instalar y configurar un equipo con Windows 11 para aprovechar al máximo toda su potencia, para juegos, realidad virtual, flujos pesados de trabajo...
+[ [Inglés](README.md) ]
 
-[Inglés](README.md)
+Estas son simplemente mis anotaciones personales sobre cómo instalar y configurar un equipo con Windows 11 para aprovechar al máximo toda su potencia, para juegos, realidad virtual, flujos pesados de trabajo...
 
 **No me hago responsable de posibles daños o pérdida de datos que puedan ocurrir.**
 
