@@ -1,211 +1,211 @@
-# Mis Notas sobre Instalar y Configurar Windows 11
+# My Notes about how to Install and Configure Windows 11
 
 [![Donate](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://paypal.me/ravensystem)
 
-Estas son simplemente mis anotaciones personales sobre cómo instalar y configurar un equipo con Windows 11 para aprovechar al máximo toda su potencia, para juegos, realidad virtual, flujos pesados de trabajo...
+These are just my personal notes on how to install and configure a Windows 11 PC to take full advantage of all its power, for gaming, VR, heavy workflows...
 
-**No me hago responsable de posibles daños o pérdida de datos que puedan ocurrir.**
+**I am not responsible for any possible damage or data loss that may occur.**
 
-## Crear USB de Instalación para instalar sin TPM 2.0
-- Es necesario un equipo con Windows (Real o virtual) y un pendrive de al menos 8GB de capacidad.
-- Descargar los creadores de medios para Windows 10 y Windows 11 de [Windows Installation Media Creator](https://support.microsoft.com/es-es/windows/crear-medios-de-instalación-de-windows-99a58364-8c02-206f-aa6f-40c3b507420d)
-- Usar el Creador de medios de **Windows 11** y crear un USB de instalación.
-- Copiar el archivo del pendrive `\sources\install.esd` al ordenador.
-- Usar el Creador de medios de **Windows 10** y crear un USB de instalación.
-- Reemplazar el archivo del pendrive `\sources\install.esd` por el que hemos copiado previamente en el ordenador.
-- El pendrive ya está listo para arrancar el equipo desde USB e instalar Windows.
+## Create Installation USB to install without TPM 2.0
+- A Windows PC (Real or virtual) and a USB stick with at least 8GB capacity are required.
+- Download the Windows 10 and Windows 11 media creators from [Windows Installation Media Creator](https://support.microsoft.com/en-us/windows/create-windows-installation-media-99a58364-8c02-206f-aa6f-40c3b507420d)
+- Use the **Windows 11** Media Creator and create an installation USB.
+- Copy the `\sources\install.esd` file from the pendrive to the computer.
+- Use the **Windows 10** Media Creator and create an installation USB.
+- Replace the `\sources\install.esd` file on the pendrive with the one we previously copied to the computer.
+- The pendrive is now ready to boot the computer from USB and install Windows.
 
-## Crear ISO compatible con BootCamp para Macs Intel
-- [Utilidad de creación de ISO BootCamp](https://github.com/RavenSystem/BootCampW11Installer)
+## Create BootCamp compatible ISO for Intel Macs
+- [BootCamp ISO creation utility](https://github.com/RavenSystem/BootCampW11Installer)
 
-## Instalar Windows
-- Arrancar desde el USB de instalación.
-  - Para Macs Intel, usar el Asistente de Instalación BoorCamp con el archivo ISO correspondinte.
-- No introducir aquí la clave de activación de Windows (Mejor activar Windows una vez instalado y configurado, aunque se puede dejar sin activar y todo funcionará sin restricciones, menos la parte de personalizar los colores y el fondo de escritorio).
-- Una vez que se haya instalado, se ejecutará el asistente inicial de configuración, preguntando el país:
-    - Pulsar `Shift + F10` para abrir un Terminal.
-    - Ejecutar el siguiente comando (Si la distribución actual del teclado no permite escribir la barra `\`, se puede copiar y pegar con el ratón una del propio Terminal):
+## Install Windows
+- Boot from the installation USB.
+- For Intel Macs, use the BoorCamp Installation Wizard with the corresponding ISO file.
+- Do not enter the Windows activation key here (It is better to activate Windows once it is installed and configured, although you can leave it unactivated and everything will work without restrictions, except for the part of customizing the colors and the desktop background).
+- Once installed, the initial setup wizard will run, asking for the country:
+- Press `Shift + F10` to open a Terminal.
+- Run the following command (If your current keyboard layout doesn't allow you to type the `\` slash, you can copy and paste one from the Terminal itself with the mouse):
 ```shell
 OOBE\BYPASSNRO
 ```
-   - Cuando el equipo de reinicie, desconectar el cable de red.
-        - También es posible dejarlo sin conexión abriendo de nuevo un Terminal (`Shift + F10`) y ejecutando:
+- When the computer restarts, disconnect the network cable.
+- You can also take it offline by opening a Terminal again (`Shift + F10`) and running:
 ```shell
 ipconfig /release
 ```
-   - Seguir los pasos del asistente, indicando que no tiene conexión a Internet y creando una cuenta local de usuario.
-   - En las preguntas del final de la configuración, de permisos y recopilación de datos, seleccionar siempre la opción de no enviar ni compartir (la segunda opción de las dos que hay).
-- Una vez terminado todo, conectarlo a Internet.
-- Abrir Configuración -> Windows Update -> Buscar actualizaciones, e instalarlas. Y reiniciar, aunque no lo pida.
+- Follow the steps of the wizard, indicating that you don't have an Internet connection and creating a local user account.
+- In the questions at the end of the configuration, about permissions and data collection, always select the option not to send or share (the second of the two options).
+- Once everything is finished, connect it to the Internet.
+- Open Settings -> Windows Update -> Search for updates, and install them. And reboot, even if it doesn't ask for it.
 
-## Eliminar software no necesario de Windows
-(Fuente: https://github.com/Raphire/Win11Debloat)
-- Abrir un Terminal como Administrador (Botón derecho sobre su icono y Ejecutar como administrador) y ejecutar:
+## Remove unnecessary software from Windows
+(Source: https://github.com/Raphire/Win11Debloat)
+- Open a Terminal as Administrator (Right-click on its icon and Run as administrator) and run:
 ```shell
 & ([scriptblock]::Create((irm "https://win11debloat.raphi.re/"))) -RunDefaults -RemoveCommApps -RemoveW11Outlook -RemoveGamingApps -DisableDVR -DisableLockscreenTips -ClearStartAllUsers -RevertContextMenu -ShowHiddenFolders -HideTaskview
 ```
-- Después, ejecutar:
+- Then, run:
 ```shell
 & ([scriptblock]::Create((irm "https://win11debloat.raphi.re/")))
 ```
-- Seleccionar la opción `3`.
-- Marcar: Only show installed apps.
-- Seleccionar:
-    - Microsoft.Edge
-    - Microsoft.GetHelp
-    - Microsoft.MSPaint 
-    - Microsoft.Windows.DevHome
-    - Microsoft.YourPhone
-    - Microsoft.ZuneMusic
-    - MicrosoftWindows.CrossDevice
-- Pulsar Confirm.
+- Select option `3`.
+- Check: Only show installed apps.
+- Select:
+- Microsoft.Edge
+- Microsoft.GetHelp
+- Microsoft.MSPaint
+- Microsoft.Windows.DevHome
+- Microsoft.YourPhone
+- Microsoft.ZuneMusic
+- MicrosoftWindows.CrossDevice
+- Press Confirm.
 
-## Activar la entrada de usuario automática (Autologin)
-- Abrir un Terminal y ejecutar:
+## Enable automatic user login (Autologin)
+- Open a Terminal and run:
 ```shell
 regedit
 ```
-- Ir a la clave:
+- Go to the key:
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device
 ```
-- Establecer el valor a `0` (Por defecto es `2`) de:
+- Set the value to `0` (Default is `2`) of:
 ```
 DevicePasswordLessBuildVersion
 ```
-- Cerrar el Editor de Registro.
-- En el Terminal, ejecutar:
+- Close the Registry Editor.
+- In the Terminal, run:
 ```shell
 netplwiz
 ```
-- Desactivar la opción de que los usuarios tienen que introducir la contraseña y seguir las instrucciones en pantalla.
+- Disable the option that requires users to enter a password and follow the on-screen instructions.
 
-## Desactivar la integridad de la memoria
-- Incrementa el rendimiento del equipo, a cambio de tener el nivel de seguridad de Windows 10.
-- Abrir Configuración -> Privacidad y seguridad -> Seguridad de Windows.
-- Pulsar: Abrir Seguridad de Windows.
-- Abrir: Seguridad del dispositivo -> Detalles de aislamiento del núcleo.
-    - Desactivar: Integridad de memoria.
-    - Desactivar: Protección de autoridad de seguridad local (LSA).
-- Reiniciar el equipo.
-- Abrir un Terminal y ejecutar:
+## Disable memory integrity
+- Increases the computer's performance, in exchange for having the Windows 10 security level.
+- Open Settings -> Privacy and security -> Windows Security.
+- Click: Open Windows Security.
+- Open: Device security -> Kernel isolation details.
+- Disable: Memory integrity.
+- Disable: Local security authority (LSA) protection.
+- Restart the computer.
+- Open a Terminal and run:
 ```shell
 msinfo32
 ```
-- Seleccionar: Resumen del sistema.
-    - A la derecha, buscar: Seguridad basada en virtualización.
-    - Si está habilitada o activada:
-        - En el Terminal, ejecutar:
+- Select: System summary.
+- On the right, search for: Virtualization-based security.
+- If enabled or activated:
+- In Terminal, run:
 ```shell
 bcedit /set hypervisorlaunchtype off
 ```
-  - Reiniciar el equipo.
-    - Nota: Para revertir este cambio, abrir un Terminal y ejecutar:
+- Restart your computer.
+- Note: To revert this change, open a Terminal and run:
 ```shell
 bcedit /set hypervisorlaunchtype on
 ```
 
-## Minimizar el impacto del antivirus
-- Abrir Configuración -> Privacidad y seguridad -> Seguridad de Windows.
-- Pulsar: Abrir Seguridad de Windows.
-- Abrir: Seguridad del dispositivo -> Protección antivirus y contra amenazas.
-- En: Configuración de antivirus y protección contra amenazas, pulsar: Administrar la configuración.
-    - Desactivar todo, excepto: Protección en tiempo real.
-    - Opcional: Abajo del todo, en Exclusiones, pulsar: Agregar o quitar exclusiones.
-        - Pulsar en + Agregar exclusión.
-        - Carpeta: `C:\Archivos de programa (x86)\Steam\`
-        - Añadir cualquier otra carpeta que contenga software que necesite toda la potencia del sistema.
+## Minimize the impact of antivirus
+- Open Settings -> Privacy & security -> Windows Security.
+- Click: Open Windows Security.
+- Open: Device security -> Antivirus and threat protection.
+- Under: Antivirus and threat protection settings, click: Manage settings.
+- Disable everything except: Real-time protection.
+- Optional: At the bottom, under Exclusions, click: Add or remove exclusions.
+- Click on + Add exclusion.
+- Folder: `C:\Program Files (x86)\Steam\`
+- Add any other folders that contain software that needs the full power of the system.
 
-## Desactivar la ejecución en segundo plano de los componentes del sistema
-- Abrir Configuración -> Sistema -> Componentes del sistema.
-- Para cada uno de los componentes, pulsar el icono de los 3 puntos `···` a la derecha -> Opciones avanzadas.
-    - Establecer en Nunca la opción de los Permisos de componente en segundo plano.
+## Disable system components from running in the background
+- Open Settings -> System -> System components.
+- For each of the components, click the 3 dots icon `···` on the right -> Advanced options.
+- Set the Background component permissions option to Never.
 
-## Desactivar algunas opciones visuales
-- Abrir Configuración -> Sistema -> Configuración avanzada del sistema.
-- En Rendimiento, pulsar Configuración.
-- En la pestaña: Efectos visuales, seleccionar Personalizar.
-    - Dejar marcado únicamente:
-        - Mostrar el contenido de la ventana mientras se arrastra.
-        - Mostrar vistas en miniatura en lugar de iconos.
-        - Suavizar bordes para las fuentes de pantalla.
-    - Pulsar Aceptar.
+## Disable some visual options
+- Open Settings -> System -> Advanced system settings.
+- Under Performance, click Settings.
+- On the Visual Effects tab, select Customize.
+- Leave only checked:
+- Show window contents while dragging.
+- Show thumbnails instead of icons.
+- Smooth edges for screen fonts.
+- Click OK.
 
-## Mostrar el plan de energía de Máximo Rendimiento en las opciones de energía
-- Abrir un Terminal y ejecutar:
+## Show the Maximum Performance power plan in the power options
+- Open a Terminal and run:
 ```shell
 powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 ```
 
-## Activar el apagado automático de núcleos de la CPU para maximizar el turbo en los demás
-- Se conoce como "Core Parking". Es una opción que está oculta en las opciones de energía del procesador.
-- Abrir un Terminal y ejecutar:
+## Enable automatic shutdown of CPU cores to maximize turbo boost on the others
+- This is known as "Core Parking." It is an option that is hidden in the processor's power options.
+- Open a Terminal and run:
 ```shell
 powercfg -attributes SUB_PROCESSOR CPMINCORES -ATTRIB_HIDE
 powercfg.cpl
 ```
-- El plan recomendado para maximizar la potencia del equipo es: **Equilibrado**.
-- Pulsar: Cambiar la configuración del plan (La configuración sólo se aplica al plan seleccionado).
-    - Pulsar: Cambiar la configuración avanzada de energía.
-        - Ir a: Administración de energía del procesador, y configurar:
-            - Mínima detención de núcleos de rendimiento de procesador: `50%`.
-                - Esta opción indica porcentualmente la cantidad de núcleos que nunca se van a apagar.
-            - Estado mínimo del procesador: `5%`.
-            - Estado máximo del procesador: `100%`.
-        - Pulsar: Aceptar.
+- The recommended plan to maximize the computer's power is: **Balanced**.
+- Click: Change plan settings (The settings only apply to the selected plan).
+- Click: Change advanced power settings.
+- Go to: Processor power management, and configure:
+- Minimum processor performance cores stop: `50%`.
+- This option indicates the percentage of cores that will never be turned off.
+- Minimum processor state: `5%`.
+- Maximum processor state: `100%`.
+- Click: OK.
 
-## Evitar que ciertos programas cambien el plan de energía activo
-- Algunos programas, como SteamVR, cambian el plan de energía activo, provocando una pérdida de rendimiento.
-- Abrir un Terminal y ejecutar:
+## Prevent certain programs from changing the active power plan
+- Some programs, such as SteamVR, change the active power plan, causing a loss of performance.
+- Open a Terminal and run:
 ```shell
 powercfg /l
 ```
-- Copiar el GUID del plan a dejar siempre activo.
-- Ejecutar:
+- Copy the GUID of the plan to always leave active.
+- Run:
 ```shell
 gpedit.msc
 ```
-- Seleccionar: Directiva Equipo local -> Plantillas administrativas -> Sistema -> Administración de energía
-- A la derecha, doble clic en: Especificar un plan de energía activo personalizado.
-- Seleccionar: Habilitada.
-- Pegar el GUID del plan en: Plan de energía activo personalizado (GUID).
-- Pulsar: Aplicar.
+- Select: Local Computer Policy -> Administrative Templates -> System -> Power Management
+- On the right, double-click: Specify a custom active power plan.
+- Select: Enabled.
+- Paste the GUID of the plan in: Custom active power plan (GUID).
+- Click: Apply.
 
-## Configurar el gestor de procesos para priorizar los de primer plano
-(Fuente: https://www.xbitlabs.com/win32priorityseparation-performance/)
-- Abrir un Terminal y ejecutar:
+## Configure the process manager to prioritize foreground processes
+(Source: https://www.xbitlabs.com/win32priorityseparation-performance/)
+- Open a Terminal and run:
 ```shell
 regedit
 ```
-- Ir a la clave:
+- Go to the key:
 ```
 HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\PriorityControl
 ```
-- Establecer el valor a `26` Hexadecimal (Por defecto es `2`) de:
+- Set the value to `26` Hexadecimal (Default is `2`) of:
 ```
 Win32PrioritySeparation
 ```
-- Cerrar el Editor de Registro.
+- Close the Registry Editor.
 
-## Desactivar la creación de puntos de restauración (Opcional)
-- Abrir Configuración -> Sistema -> Protección del sistema.
-    - Pulsar Configurar y seleccionar: Deshabilitar protección del sistema.
+## Disable the creation of restore points (Optional)
+- Open Settings -> System -> System Protection.
+- Click Configure and select: Disable system protection.
 
-## Desactivar el uso del disco como RAM cuando haga falta (Opcional)
-- Sólo debe desactivarse si el equipo tiene memoria RAM de sobra (16GB o más, dependiendo del software que se vaya a ejecutar).
-- Abrir Configuración -> Sistema -> Configuración avanzada del sistema.
-- En Rendimiento, pulsar Configuración.
-- En la pestaña: Opciones avanzadas, pulsar Cambiar.
-    - Desmarcar: Administrar automáticamente el tamaño del archivo de paginación para todas las unidades.
-    - Para cada unidad, seleccionar: Sin archivo de paginación, y pulsar Establecer.
-    - Pulsar Aceptar.
+## Disable using disk as RAM when needed (Optional)
+- Only disable if your computer has plenty of RAM (16GB or more, depending on the software you're running).
+- Open Settings -> System -> Advanced system settings.
+- Under Performance, click Settings.
+- Under the Advanced tab, click Change.
+- Uncheck: Automatically manage paging file size for all drives.
+- For each drive, select: No paging file, and click Set.
+- Click OK.
 
-## NVIDIA: Panel de Control
-- CUDA - Política de uso de la memoria del sistema: No usar la memoria del sistema como respaldo
-- Filtrado de texturas - Calidad: Alta calidad
-- Fotogramas preprocesados para la realidad virtual: Utilizar la configuración de la aplicación 3D
-- Modo de control de energía: Máximo rendimiento preferido
-- Tamaño de la caché del sombreador: 100 GB
+## NVIDIA: Control Panel
+- CUDA - System Memory Usage Policy: Do not use system memory as backup
+- Texture Filtering - Quality: High Quality
+- Prerendered Frames for VR: Use 3D Application Settings
+- Power Control Mode: Maximum Performance Preferred
+- Shader Cache Size: 100 GB
 
-## AMD: Software Adrenaline
-- Teselación: Desactivado.
+## AMD: Adrenaline Software
+- Tessellation: Disabled.
