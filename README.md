@@ -4,6 +4,8 @@
 
 These are just my personal notes on how to install and configure a Windows 11 PC to take full advantage of all its power, for gaming, VR, heavy workflows...
 
+[Spanish](README_ES.md)
+
 **I am not responsible for any possible damage or data loss that may occur.**
 
 ## Create Installation USB to install without TPM 2.0
