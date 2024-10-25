@@ -1,4 +1,4 @@
-# Mis Notas sobre Windows 11
+# Mis Notas sobre Instalar y Configurar Windows 11
 
 Estas son simplemente mis anotaciones personales sobre cómo instalar y configurar un equipo con Windows 11 para aprovechar al máximo toda su potencia, para juegos, realidad virtual, flujos pesados de trabajo...
 
@@ -12,6 +12,9 @@ Estas son simplemente mis anotaciones personales sobre cómo instalar y configur
 - Usar el Creador de medios de **Windows 10** y crear un USB de instalación.
 - Reemplazar el archivo del pendrive `\sources\install.esd` por el que hemos copiado previamente en el ordenador.
 - El pendrive ya está listo para arrancar el equipo desde USB e instalar Windows.
+
+## Crear ISO compatible con BootCamp para Macs Intel
+- [Utilidad de creación de ISO BootCamp](https://github.com/RavenSystem/BootCampW11Installer)
 
 ## Instalar Windows
 - Arrancar desde el USB de instalación.
