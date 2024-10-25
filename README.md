@@ -69,7 +69,7 @@ regedit
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device
 ```
-- Cambiar el valor a `0` (Por defecto es `2`) de:
+- Establecer el valor a `0` (Por defecto es `2`) de:
 ```
 DevicePasswordLessBuildVersion
 ```
@@ -178,7 +178,7 @@ regedit
 ```
 HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\PriorityControl
 ```
-- Cambiar el valor a `26` Hexadecimal (Por defecto es `2`) de:
+- Establecer el valor a `26` Hexadecimal (Por defecto es `2`) de:
 ```
 Win32PrioritySeparation
 ```
