@@ -28,7 +28,7 @@ OOBE\BYPASSNRO
 ipconfig /release
 ```
    - Seguir los pasos del asistente, indicando que no tiene conexión a Internet y creando una cuenta local de usuario.
-    - En las preguntas del final de la configuración, de permisos y recopilación de datos, seleccionar siempre la opción de no enviar ni compartir (la segunda opción de las dos que hay).
+   - En las preguntas del final de la configuración, de permisos y recopilación de datos, seleccionar siempre la opción de no enviar ni compartir (la segunda opción de las dos que hay).
 - Una vez terminado todo, conectarlo a Internet.
 - Abrir Configuración -> Windows Update -> Buscar actualizaciones, e instalarlas. Y reiniciar, aunque no lo pida.
 
