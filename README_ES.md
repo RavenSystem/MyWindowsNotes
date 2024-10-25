@@ -4,6 +4,8 @@
 
 Estas son simplemente mis anotaciones personales sobre cómo instalar y configurar un equipo con Windows 11 para aprovechar al máximo toda su potencia, para juegos, realidad virtual, flujos pesados de trabajo...
 
+[Inglés](README.md)
+
 **No me hago responsable de posibles daños o pérdida de datos que puedan ocurrir.**
 
 ## Crear USB de Instalación para instalar sin TPM 2.0
