@@ -8,7 +8,7 @@ These are just my personal notes on how to install and configure a Windows 11 PC
 
 **I am not responsible for any possible damage or data loss that may occur.**
 
-## Create Installation USB to install without TPM 2.0
+## Create Installation USB to install without TPM 2.0 requirement
 - A Windows PC (Real or virtual) and a USB stick with at least 8GB capacity are required.
 - Download the Windows 10 and Windows 11 media creators from [Windows Installation Media Creator](https://support.microsoft.com/en-us/windows/create-windows-installation-media-99a58364-8c02-206f-aa6f-40c3b507420d)
 - Use the **Windows 11** Media Creator and create an installation USB.
