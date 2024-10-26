@@ -22,21 +22,21 @@ These are just my personal notes on how to install and configure a Windows 11 PC
 
 ## Install Windows
 - Boot from the USB.
-- For Intel Macs, use the BoorCamp Installation Wizard with the corresponding ISO file.
+  - For Intel Macs, use the BoorCamp Installation Wizard with the corresponding ISO file.
 - Do not enter the Windows activation key here (It is better to activate Windows once it is installed and configured, although you can leave it unactivated and everything will work without restrictions, except for the part of customizing the colors and the desktop background).
 - Once installed, the initial setup wizard will run, asking for the country:
-- Press `Shift + F10` to open a Terminal.
-- Run the following command (If your current keyboard layout doesn't allow you to type the `\` slash, you can copy and paste one from the Terminal itself with the mouse):
+  - Press `Shift + F10` to open a Terminal.
+  - Run the following command (If your current keyboard layout doesn't allow you to type the `\` slash, you can copy and paste one from the Terminal itself with the mouse):
 ```shell
 OOBE\BYPASSNRO
 ```
-- When the computer restarts, disconnect the network cable.
-- You can also take it offline by opening a Terminal again (`Shift + F10`) and running:
+   - When the computer restarts, disconnect the network cable.
+      - You can also take it offline by opening a Terminal again (`Shift + F10`) and running:
 ```shell
 ipconfig /release
 ```
-- Follow the steps of the wizard, indicating that you don't have an Internet connection and creating a local user account.
-- In the questions at the end of the configuration, about permissions and data collection, always select the option not to send or share (the second of the two options).
+   - Follow the steps of the wizard, indicating that you don't have an Internet connection and creating a local user account.
+   - In the questions at the end of the configuration, about permissions and data collection, always select the option not to send or share (the second of the two options).
 - Once everything is finished, connect it to the Internet.
 - Open Settings -> Windows Update -> Search for updates, and install them. And reboot, even if it doesn't ask for it.
 
@@ -87,22 +87,22 @@ netplwiz
 - Open Settings -> Privacy and security -> Windows Security.
 - Click: Open Windows Security.
 - Open: Device security -> Kernel isolation details.
-- Disable: Memory integrity.
-- Disable: Local security authority (LSA) protection.
+  - Disable: Memory integrity.
+  - Disable: Local security authority (LSA) protection.
 - Restart the computer.
 - Open a Terminal and run:
 ```shell
 msinfo32
 ```
 - Select: System summary.
-- On the right, search for: Virtualization-based security.
-- If enabled or activated:
-- In Terminal, run:
+  - On the right, search for: Virtualization-based security.
+  - If enabled or activated:
+    - In Terminal, run:
 ```shell
 bcedit /set hypervisorlaunchtype off
 ```
-- Restart your computer.
-  - Note: To revert this change, open a Terminal and run:
+  - Restart your computer.
+    - Note: To revert this change, open a Terminal and run:
 ```shell
 bcedit /set hypervisorlaunchtype on
 ```
@@ -112,26 +112,26 @@ bcedit /set hypervisorlaunchtype on
 - Click: Open Windows Security.
 - Open: Device security -> Antivirus and threat protection.
 - Under: Antivirus and threat protection settings, click: Manage settings.
-- Disable everything except: Real-time protection.
-- Optional: At the bottom, under Exclusions, click: Add or remove exclusions.
-- Click on + Add exclusion.
-- Folder: `C:\Program Files (x86)\Steam\`
-- Add any other folders that contain software that needs the full power of the system.
+  - Disable everything except: Real-time protection.
+  - Optional: At the bottom, under Exclusions, click: Add or remove exclusions.
+    - Click on + Add exclusion.
+    - Folder: `C:\Program Files (x86)\Steam\`
+    - Add any other folders that contain software that needs the full power of the system.
 
 ## Disable system components from running in the background
 - Open Settings -> System -> System components.
 - For each of the components, click the 3 dots icon `···` on the right -> Advanced options.
-- Set the Background component permissions option to Never.
+  - Set the Background component permissions option to Never.
 
 ## Disable some visual options
 - Open Settings -> System -> Advanced system settings.
 - Under Performance, click Settings.
 - On the Visual Effects tab, select Customize.
-- Leave only checked:
-- Show window contents while dragging.
-- Show thumbnails instead of icons.
-- Smooth edges of screen fonts.
-- Click OK.
+  - Leave only checked:
+    - Show window contents while dragging.
+    - Show thumbnails instead of icons.
+    - Smooth edges of screen fonts.
+  - Click OK.
 
 ## Show the Maximum Performance power plan in the power options
 - Open a Terminal and run:
@@ -148,13 +148,13 @@ powercfg.cpl
 ```
 - The recommended plan to maximize the computer's power is: **Balanced**.
 - Click: Change plan settings (The settings only apply to the selected plan).
-- Click: Change advanced power settings.
-- Go to: Processor power management, and configure:
-- Minimum processor performance cores stop: `50%`.
-- This option indicates the percentage of cores that will never be turned off.
-- Minimum processor state: `5%`.
-- Maximum processor state: `100%`.
-- Click: OK.
+  - Click: Change advanced power settings.
+    - Go to: Processor power management, and configure:
+      - Minimum processor performance cores stop: `50%`.
+        - This option indicates the percentage of cores that will never be turned off.
+      - Minimum processor state: `5%`.
+      - Maximum processor state: `100%`.
+    - Click: OK.
 
 ## Prevent certain programs from changing the active power plan
 - Some programs, such as SteamVR, change the active power plan, causing a loss of performance.
@@ -191,16 +191,16 @@ Win32PrioritySeparation
 
 ## Disable the creation of restore points (Optional)
 - Open Settings -> System -> System Protection.
-- Click Configure and select: Disable system protection.
+  - Click Configure and select: Disable system protection.
 
 ## Disable using disk as RAM when needed (Optional)
 - Only disable if your computer has plenty of RAM (16GB or more, depending on the software you're running).
 - Open Settings -> System -> Advanced system settings.
 - Under Performance, click Settings.
 - Under the Advanced tab, click Change.
-- Uncheck: Automatically manage paging file size for all drives.
-- For each drive, select: No paging file, and click Set.
-- Click OK.
+  - Uncheck: Automatically manage paging file size for all drives.
+  - For each drive, select: No paging file, and click Set.
+  - Click OK.
 
 ## NVIDIA: Control Panel
 - CUDA - System Memory Usage Policy: Do not use system memory as backup
