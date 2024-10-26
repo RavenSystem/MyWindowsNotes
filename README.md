@@ -86,7 +86,7 @@ netplwiz
 - Increases the computer's performance, in exchange for having the Windows 10 security level.
 - Open Settings -> Privacy and security -> Windows Security.
 - Click: Open Windows Security.
-- Open: Device security -> Kernel isolation details.
+- Open: Device security -> Core isolation details.
   - Disable: Memory integrity.
   - Disable: Local security authority (LSA) protection.
 - Restart the computer.
@@ -110,8 +110,8 @@ bcedit /set hypervisorlaunchtype on
 ## Minimize the impact of antivirus
 - Open Settings -> Privacy & security -> Windows Security.
 - Click: Open Windows Security.
-- Open: Device security -> Antivirus and threat protection.
-- Under: Antivirus and threat protection settings, click: Manage settings.
+- Open: Device security -> Virus and threat protection.
+- Under: Virus and threat protection settings, click: Manage settings.
   - Disable everything except: Real-time protection.
   - Optional: At the bottom, under Exclusions, click: Add or remove exclusions.
     - Click on + Add exclusion.
@@ -150,7 +150,7 @@ powercfg.cpl
 - Click: Change plan settings (The settings only apply to the selected plan).
   - Click: Change advanced power settings.
     - Go to: Processor power management, and configure:
-      - Minimum processor performance cores stop: `50%`.
+      - Processor performance core parking min cores: `50%`.
         - This option indicates the percentage of cores that will never be turned off.
       - Minimum processor state: `5%`.
       - Maximum processor state: `100%`.
