@@ -2,7 +2,7 @@
 
 [![Donate](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://paypal.me/ravensystem)
 
-[ [Spanish](README_ES.md) ]
+[ [Español](README_ES.md) ]
 
 These are just my personal notes on how to install and configure a Windows 11 PC to take full advantage of all its power, for gaming, VR, heavy workflows...
 
