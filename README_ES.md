@@ -203,11 +203,12 @@ Win32PrioritySeparation
   - Pulsar Aceptar.
 
 ## NVIDIA: Panel de Control
-- CUDA - Política de uso de la memoria del sistema: No usar la memoria del sistema como respaldo
-- Filtrado de texturas - Calidad: Alta calidad
-- Fotogramas preprocesados para la realidad virtual: Utilizar la configuración de la aplicación 3D
-- Modo de control de energía: Máximo rendimiento preferido
-- Tamaño de la caché del sombreador: 100 GB
+- Todo por defecto, excepto:
+  - CUDA - Política de uso de la memoria del sistema: No usar la memoria del sistema como respaldo
+  - Filtrado de texturas - Calidad: Alta calidad
+  - Fotogramas preprocesados para la realidad virtual: Utilizar la configuración de la aplicación 3D
+  - Modo de control de energía: Máximo rendimiento preferido
+  - Tamaño de la caché del sombreador: 100 GB
 
 ## AMD: Software Adrenaline
 - Teselación: Desactivado.
