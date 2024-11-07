@@ -4,6 +4,8 @@
 
 [ [Español](README_ES.md) ]
 
+[ [GitHub Source](https://github.com/RavenSystem/MyWindowsNotes) ]
+
 These are just my personal notes on how to install and configure a Windows 11 PC to take full advantage of all its power, for gaming, VR, heavy workflows...
 
 **I am not responsible for any possible damage or data loss that may occur.**
