@@ -205,6 +205,7 @@ Win32PrioritySeparation
   - Click OK.
 
 ## NVIDIA: Control Panel
+- Recommended driver version: [552.44](https://www.nvidia.com/download/driverResults.aspx/224483/en-us/)
 - All by default, except:
   - CUDA - System Memory Usage Policy: Do not use system memory as backup
   - Texture Filtering - Quality: High Quality
