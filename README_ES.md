@@ -185,7 +185,7 @@ regedit
 ```
 HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\PriorityControl
 ```
-- Establecer el valor a `26` Hexadecimal (Por defecto es `2`) de:
+- Establecer el valor a `1a` Hexadecimal (Por defecto es `2`) de:
 ```
 Win32PrioritySeparation
 ```
