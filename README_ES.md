@@ -209,6 +209,7 @@ Win32PrioritySeparation
   - CUDA - Política de uso de la memoria del sistema: No usar la memoria del sistema como respaldo
   - Filtrado de texturas - Calidad: Alta calidad
   - Fotogramas preprocesados para la realidad virtual: Utilizar la configuración de la aplicación 3D
+    - Para usar el Suavizado de Movimiento nativo de SteamVR (Valve Index, Vive and Vive Pro): `4`
   - Modo de control de energía: Máximo rendimiento preferido
   - Tamaño de la caché del sombreador: 100 GB
 
