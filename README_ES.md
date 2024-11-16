@@ -152,9 +152,9 @@ powercfg.cpl
 - Pulsar: Cambiar la configuración del plan (La configuración sólo se aplica al plan seleccionado).
   - Pulsar: Cambiar la configuración avanzada de energía.
     - Ir a: Administración de energía del procesador, y configurar:
-      - Mínima detención de núcleos de rendimiento de procesador: `50%`.
+      - Mínima detención de núcleos de rendimiento de procesador: `0%`.
         - Esta opción indica porcentualmente la cantidad de núcleos que nunca se van a apagar.
-      - Estado mínimo del procesador: `5%`.
+      - Estado mínimo del procesador: `0%`.
       - Estado máximo del procesador: `100%`.
     - Pulsar: Aceptar.
 
