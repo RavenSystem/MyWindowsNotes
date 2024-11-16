@@ -152,9 +152,9 @@ powercfg.cpl
 - Click: Change plan settings (The settings only apply to the selected plan).
   - Click: Change advanced power settings.
     - Go to: Processor power management, and configure:
-      - Processor performance core parking min cores: `50%`.
+      - Processor performance core parking min cores: `0%`.
         - This option indicates the percentage of cores that will never be turned off.
-      - Minimum processor state: `5%`.
+      - Minimum processor state: `0%`.
       - Maximum processor state: `100%`.
     - Click: OK.
 
