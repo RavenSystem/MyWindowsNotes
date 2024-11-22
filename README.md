@@ -43,7 +43,7 @@ ipconfig /release
 - Open Settings -> Windows Update -> Search for updates, and install them. And reboot, even if it doesn't ask for it.
 
 ## Remove unnecessary software
-(Source: https://github.com/Raphire/Win11Debloat)
+(Source: [https://github.com/Raphire/Win11Debloat](https://github.com/Raphire/Win11Debloat))
 - Open a Terminal as Administrator (Right-click on its icon and Run as administrator) and run:
 ```shell
 & ([scriptblock]::Create((irm "https://win11debloat.raphi.re/"))) -RunDefaults -RemoveCommApps -RemoveW11Outlook -RemoveGamingApps -DisableDVR -DisableLockscreenTips -ClearStartAllUsers -RevertContextMenu -ShowHiddenFolders -HideTaskview
@@ -65,7 +65,7 @@ ipconfig /release
 - Press Confirm.
 
 ## Disable unnecessary functions and processes
-(Source: https://github.com/ChrisTitusTech/winutil)
+(Source: [https://github.com/ChrisTitusTech/winutil](https://github.com/ChrisTitusTech/winutil))
 - Open a Terminal as Administrator (Right-click on its icon and Run as administrator) and run:
 ```shell
 irm "https://christitus.com/win" | iex
