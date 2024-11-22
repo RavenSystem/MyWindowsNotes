@@ -42,7 +42,7 @@ ipconfig /release
 - Once everything is finished, connect it to the Internet.
 - Open Settings -> Windows Update -> Search for updates, and install them. And reboot, even if it doesn't ask for it.
 
-## Remove unnecessary software from Windows
+## Remove unnecessary software
 (Source: https://github.com/Raphire/Win11Debloat)
 - Open a Terminal as Administrator (Right-click on its icon and Run as administrator) and run:
 ```shell
@@ -63,6 +63,15 @@ ipconfig /release
   - Microsoft.ZuneMusic
   - MicrosoftWindows.CrossDevice
 - Press Confirm.
+
+## Disable unnecessary functions and processes
+(Source: https://github.com/ChrisTitusTech/winutil)
+- Open a Terminal as Administrator (Right-click on its icon and Run as administrator) and run:
+```shell
+irm "https://christitus.com/win" | iex
+```
+- A window will open: Click on "Tweaks", then on "Standard", and finally on "Run Tweaks" at bottom.
+- Wait for it to indicate that it has finished at the top right and close the window.
 
 ## Enable automatic user login (Autologin)
 - Open a Terminal and run:
