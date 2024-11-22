@@ -43,7 +43,7 @@ ipconfig /release
 - Abrir Configuración -> Windows Update -> Buscar actualizaciones, e instalarlas. Y reiniciar, aunque no lo pida.
 
 ## Eliminar software no necesario
-(Fuente: https://github.com/Raphire/Win11Debloat)
+(Fuente: [https://github.com/Raphire/Win11Debloat](https://github.com/Raphire/Win11Debloat))
 - Abrir un Terminal como Administrador (Botón derecho sobre su icono y Ejecutar como administrador) y ejecutar:
 ```shell
 & ([scriptblock]::Create((irm "https://win11debloat.raphi.re/"))) -RunDefaults -RemoveCommApps -RemoveW11Outlook -RemoveGamingApps -DisableDVR -DisableLockscreenTips -ClearStartAllUsers -RevertContextMenu -ShowHiddenFolders -HideTaskview
@@ -65,7 +65,7 @@ ipconfig /release
 - Pulsar Confirm.
 
 ## Desactivar funciones y procesos no necesarios
-(Fuente: https://github.com/ChrisTitusTech/winutil)
+(Fuente: [https://github.com/ChrisTitusTech/winutil](https://github.com/ChrisTitusTech/winutil))
 - Abrir un Terminal como Administrador (Botón derecho sobre su icono y Ejecutar como administrador) y ejecutar:
 ```shell
 irm "https://christitus.com/win" | iex
