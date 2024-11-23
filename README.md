@@ -71,7 +71,7 @@ ipconfig /release
 irm "https://christitus.com/win" | iex
 ```
 - A window will open: Click on "Tweaks", then on "Standard", and finally on "Run Tweaks" at bottom.
-- Wait for it to indicate that it has finished at the top right and close the window.
+- Wait for it to indicate "Tweaks finished" at the top right and close it.
 
 ## Enable automatic user login (Autologin)
 - Open a Terminal and run:
