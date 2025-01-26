@@ -214,12 +214,11 @@ Win32PrioritySeparation
   - Click OK.
 
 ## NVIDIA: Control Panel
-- Recommended driver version: [552.44](https://www.nvidia.com/download/driverResults.aspx/224483/en-us/)
+- Recommended driver version: Latest
 - All by default, except:
   - CUDA - System Memory Usage Policy: Do not use system memory as backup
   - Texture Filtering - Quality: High Quality
   - Prerendered Frames for VR: Use 3D Application Settings
-    - For SteamVR Native Motion Smoothing (Valve Index, Vive and Vive Pro): `4`
   - Power Control Mode: Maximum Performance Preferred
   - Shader Cache Size: 100 GB
 
