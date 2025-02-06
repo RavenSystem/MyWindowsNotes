@@ -160,11 +160,13 @@ powercfg.cpl
 - El plan recomendado para maximizar la potencia del equipo es: **Equilibrado**.
 - Pulsar: Cambiar la configuración del plan (La configuración sólo se aplica al plan seleccionado).
   - Pulsar: Cambiar la configuración avanzada de energía.
+    - Pulsar `Restaurar valores predeterminados del plan`.
     - Ir a: Administración de energía del procesador, y configurar:
+      - Umbral de aumento de rendimiento de procesador: `90%`
       - Mínima detención de núcleos de rendimiento de procesador: `0%`.
         - Esta opción indica porcentualmente la cantidad de núcleos que nunca se van a apagar.
-      - Estado mínimo del procesador: `0%`.
-      - Estado máximo del procesador: `100%`.
+      - Estado de rendimiento detenido de la detención de núcleo de rendimiento de procesador: `Estado de rendimiento más profundo`.
+      - Umbral de aumento de nivel de inactividad de procesador: `100%`.
     - Pulsar: Aceptar.
 
 ## Evitar que ciertos programas cambien el plan de energía activo
