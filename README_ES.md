@@ -154,10 +154,10 @@ powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 - Se conoce como "Core Parking". Es una opción que está oculta en las opciones de energía del procesador.
 - Abrir un Terminal y ejecutar:
 ```shell
+powercfg -attributes SUB_PROCESSOR PERFINCTHRESHOLD -ATTRIB_HIDE
 powercfg -attributes SUB_PROCESSOR CPMINCORES -ATTRIB_HIDE
-powercfg -attributes SUB_PROCESSOR 06cadf0e-64ed-448a-8927-ce7bf90eb35d -ATTRIB_HIDE
-powercfg -attributes SUB_PROCESSOR 447235c7-6a8d-4cc0-8e24-9eaf70b96e2b -ATTRIB_HIDE
-powercfg -attributes SUB_PROCESSOR 7b224883-b3cc-4d79-819f-8374152cbe7c -ATTRIB_HIDE
+powercfg -attributes SUB_PROCESSOR CPPERF -ATTRIB_HIDE
+powercfg -attributes SUB_PROCESSOR IDLEPROMOTE -ATTRIB_HIDE
 powercfg.cpl
 ```
 - El plan recomendado para maximizar la potencia del equipo es: **Equilibrado**.
