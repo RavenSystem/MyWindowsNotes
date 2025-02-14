@@ -155,6 +155,7 @@ powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 - Open a Terminal and run:
 ```shell
 powercfg -attributes SUB_PROCESSOR PERFINCTHRESHOLD -ATTRIB_HIDE
+powercfg -attributes SUB_PROCESSOR PERFCHECK -ATTRIB_HIDE
 powercfg -attributes SUB_PROCESSOR CPMINCORES -ATTRIB_HIDE
 powercfg -attributes SUB_PROCESSOR CPPERF -ATTRIB_HIDE
 powercfg -attributes SUB_PROCESSOR IDLEPROMOTE -ATTRIB_HIDE
@@ -166,6 +167,7 @@ powercfg.cpl
     - Click: `Restore default values`.
     - Go to: Processor power management, and configure:
       - Processor performance increase threshold: `90%`
+      - Processor performance time check interval: `12ms`
       - Processor performance core parking min cores: `0%`.
         - This option indicates the percentage of cores that will never be turned off.
       - Processor performance core parking parked performance state: `Deep performance state`.
