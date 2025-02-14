@@ -155,6 +155,7 @@ powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 - Abrir un Terminal y ejecutar:
 ```shell
 powercfg -attributes SUB_PROCESSOR PERFINCTHRESHOLD -ATTRIB_HIDE
+powercfg -attributes SUB_PROCESSOR PERFCHECK -ATTRIB_HIDE
 powercfg -attributes SUB_PROCESSOR CPMINCORES -ATTRIB_HIDE
 powercfg -attributes SUB_PROCESSOR CPPERF -ATTRIB_HIDE
 powercfg -attributes SUB_PROCESSOR IDLEPROMOTE -ATTRIB_HIDE
@@ -166,6 +167,7 @@ powercfg.cpl
     - Pulsar `Restaurar valores predeterminados del plan`.
     - Ir a: Administración de energía del procesador, y configurar:
       - Umbral de aumento de rendimiento de procesador: `90%`
+      - Intervalo de comprobación de tiempo de rendimiento de procesador: `12ms`
       - Mínima detención de núcleos de rendimiento de procesador: `0%`.
         - Esta opción indica porcentualmente la cantidad de núcleos que nunca se van a apagar.
       - Estado de rendimiento detenido de la detención de núcleo de rendimiento de procesador: `Estado de rendimiento más profundo`.
