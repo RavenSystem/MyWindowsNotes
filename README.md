@@ -144,14 +144,13 @@ bcedit /set hypervisorlaunchtype on
     - Smooth edges of screen fonts.
   - Click OK.
 
-## Show the Maximum Performance power plan in the power options
+## Show the Maximum Performance power plan in the power options (Optional)
 - Open a Terminal and run:
 ```shell
 powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 ```
 
-## Enable automatic shutdown of CPU cores to maximize turbo boost on the others
-- This is known as "Core Parking." It is an option that is hidden in the processor's power options.
+## Improved Power Plan
 - Open a Terminal and run:
 ```shell
 powercfg -attributes SUB_PROCESSOR PERFINCTHRESHOLD -ATTRIB_HIDE
