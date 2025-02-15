@@ -144,14 +144,13 @@ bcedit /set hypervisorlaunchtype on
     - Suavizar bordes para las fuentes de pantalla.
   - Pulsar Aceptar.
 
-## Mostrar el plan de energía de Máximo Rendimiento en las opciones de energía
+## Mostrar el plan de energía de Máximo Rendimiento en las opciones de energía (Opcional)
 - Abrir un Terminal y ejecutar:
 ```shell
 powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 ```
 
-## Activar el apagado automático de núcleos de la CPU para maximizar el turbo en los demás
-- Se conoce como "Core Parking". Es una opción que está oculta en las opciones de energía del procesador.
+## Plan de Energía Mejorado
 - Abrir un Terminal y ejecutar:
 ```shell
 powercfg -attributes SUB_PROCESSOR PERFINCTHRESHOLD -ATTRIB_HIDE
