@@ -110,12 +110,12 @@ msinfo32
   - Si está habilitada o activada:
     - En el Terminal, ejecutar:
 ```shell
-bcedit /set hypervisorlaunchtype off
+bcdedit /set hypervisorlaunchtype off
 ```
   - Reiniciar el equipo.
     - Nota: Para revertir este cambio, abrir un Terminal y ejecutar:
 ```shell
-bcedit /set hypervisorlaunchtype on
+bcdedit /set hypervisorlaunchtype on
 ```
 
 ## Minimizar el impacto del antivirus
