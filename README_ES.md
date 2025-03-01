@@ -220,7 +220,7 @@ Win32PrioritySeparation
   - Pulsar Aceptar.
 
 ## NVIDIA: Panel de Control
-- Versión de controlador recomendada: Última
+- Versión de controlador recomendada: 572.16
 - Todo por defecto, excepto:
   - CUDA - Política de uso de la memoria del sistema: No usar la memoria del sistema como respaldo
   - Filtrado de texturas - Calidad: Alta calidad
