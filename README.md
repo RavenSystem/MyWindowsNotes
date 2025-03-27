@@ -223,7 +223,6 @@ Win32PrioritySeparation
 - Recommended driver version: 572.16
 - All by default, except:
   - CUDA - System Memory Usage Policy: Do not use system memory as backup
-  - Texture Filtering - Quality: High Quality
   - Prerendered Frames for VR: Use 3D Application Settings
   - Power Control Mode: Maximum Performance Preferred
   - Shader Cache Size: 100 GB
