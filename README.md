@@ -200,7 +200,7 @@ regedit
 ```
 HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\PriorityControl
 ```
-- Set the value to `1a` Hexadecimal (Default is `2`) of:
+- Set the value to `1a` for general use or `24` Hexadecimal for RV use (Default is `2`) of:
 ```
 Win32PrioritySeparation
 ```
@@ -220,7 +220,7 @@ Win32PrioritySeparation
   - Click OK.
 
 ## NVIDIA: Control Panel
-- Recommended driver version: 576.02
+- Recommended driver version: 576.40
 - All by default, except:
   - CUDA - System Memory Usage Policy: Do not use system memory as backup
   - Prerendered Frames for VR: Use 3D Application Settings
