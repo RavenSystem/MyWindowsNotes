@@ -200,7 +200,7 @@ regedit
 ```
 HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\PriorityControl
 ```
-- Establecer el valor a `1a` Hexadecimal (Por defecto es `2`) de:
+- Establecer el valor a `1a` para uso general o `24` Hexadecimal para RV (Por defecto es `2`) de:
 ```
 Win32PrioritySeparation
 ```
@@ -220,7 +220,7 @@ Win32PrioritySeparation
   - Pulsar Aceptar.
 
 ## NVIDIA: Panel de Control
-- Versión de controlador recomendada: 576.02
+- Versión de controlador recomendada: 576.40
 - Todo por defecto, excepto:
   - CUDA - Política de uso de la memoria del sistema: No usar la memoria del sistema como respaldo
   - Fotogramas preprocesados para la realidad virtual: Utilizar la configuración de la aplicación 3D
