@@ -24,7 +24,7 @@ These are just my personal notes on how to install and configure a Windows 11 PC
 
 ## Install Windows
 - Boot from the USB.
-  - For Intel Macs, use the BoorCamp Installation Wizard with the corresponding ISO file.
+  - For Intel Macs, use the BootCamp Installation Wizard with the corresponding ISO file.
 - Do not enter the Windows activation key here (It is better to activate Windows once it is installed and configured, although you can leave it unactivated and everything will work without restrictions, except for the part of customizing the colors and the desktop background).
 - Once installed, the initial setup wizard will run, asking for the country:
   - Press `Shift + F10` to open a Terminal.
