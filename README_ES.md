@@ -130,12 +130,12 @@ msinfo32
   - Si está habilitada o activada:
     - En el Terminal, ejecutar:
 ```shell
-bcdedit /set hypervisorlaunchtype off
+bcdedit -set hypervisorlaunchtype off
 ```
   - Reiniciar el equipo.
     - Nota: Para revertir este cambio, abrir un Terminal y ejecutar:
 ```shell
-bcdedit /set hypervisorlaunchtype on
+bcdedit -set hypervisorlaunchtype on
 ```
 
 ## Minimizar el impacto del antivirus
@@ -159,13 +159,23 @@ bcdedit /set hypervisorlaunchtype on
     - Suavizar bordes para las fuentes de pantalla.
   - Pulsar Aceptar.
 
+## Añadir el plan de energía RavenSystem Ultimate
+Este plan de energía maximiza la potencia del equipo y reduce la latencia. Ideal para juegos, realidad virtual, y software de simulación en tiempo real.
+- Descargar el archivo [ravensystem_ultimate.pow](https://github.com/RavenSystem/MyWindowsNotes/raw/refs/heads/main/ravensystem_ultimate.pow).
+- Abrir un Terminal como Administrador (Botón derecho sobre su icono y Ejecutar como administrador) y ejecutar:
+```shell
+powercfg -import [ruta]/ravensystem_ultimate.pow
+powercfg.cpl
+```
+- Seleccionar el plan **RavenSystem Ultimate**.
+
 ## Mostrar el plan de energía de Máximo Rendimiento en las opciones de energía (Opcional)
 - Abrir un Terminal y ejecutar:
 ```shell
 powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 ```
 
-## Plan de Energía Mejorado
+## Plan de Energía Mejorado (Opcional)
 - Abrir un Terminal y ejecutar:
 ```shell
 powercfg -attributes SUB_PROCESSOR PERFINCTHRESHOLD -ATTRIB_HIDE
@@ -175,7 +185,7 @@ powercfg -attributes SUB_PROCESSOR CPPERF -ATTRIB_HIDE
 powercfg -attributes SUB_PROCESSOR IDLEPROMOTE -ATTRIB_HIDE
 powercfg.cpl
 ```
-- El plan recomendado para maximizar la potencia del equipo es: **Equilibrado**.
+- El plan recomendado para maximizar la potencia del equipo sin tener un consumo excesivo es: **Equilibrado**.
 - Pulsar: Cambiar la configuración del plan (La configuración sólo se aplica al plan seleccionado).
   - Pulsar: Cambiar la configuración avanzada de energía.
     - Pulsar `Restaurar valores predeterminados del plan`.
@@ -192,7 +202,7 @@ powercfg.cpl
 - Algunos programas, como SteamVR, cambian el plan de energía activo, provocando una pérdida de rendimiento.
 - Abrir un Terminal y ejecutar:
 ```shell
-powercfg /l
+powercfg -l
 ```
 - Copiar el GUID del plan a dejar siempre activo.
 - Ejecutar:
@@ -215,7 +225,7 @@ regedit
 ```
 HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\PriorityControl
 ```
-- Establecer el valor a `1a` para uso general o `24` Hexadecimal para RV (Por defecto es `2`) de:
+- Establecer el valor a `1a` para uso general, o `24` Hexadecimal para RV (Por defecto es `2`) de:
 ```
 Win32PrioritySeparation
 ```
