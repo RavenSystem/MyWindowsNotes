@@ -70,10 +70,30 @@ ipconfig /release
 ```shell
 irm "https://christitus.com/win" | iex
 ```
-- A window will open: Click on "Tweaks", then on "Standard", and finally on "Run Tweaks" at bottom.
+- A window will open: Click on "Tweaks".
+  - Click on "Standard".
+  - At left, uncheck:
+    - Create Restore Point.
+  - At left, check:
+    - Disable Recall.
+    - Debloat Edge.
+    - Adobe Network Block.
+    - Adobe Debloat.
+    - Disable Tedero.
+    - Disable Background Apps.
+    - Disable Microsoft Copilot.
+    - Disable Intel MM (vPro LMS).
+    - Disable Notification Tray/Calendar.
+    - Disable Windows Platform Binary Table (WPBT).
+    - Set Classic Right-Click Menu.
+    - Remove Microsoft Edge.
+    - Remove OneDrive.
+    - Block Razer Software Installs.
+  - Click on "Run Tweaks" at bottom.
 - Wait for it to indicate "Tweaks finished" at the top right and close it.
+- Reboot the machine.
 
-## Enable automatic user login (Autologin)
+## Enable automatic user login (Optional)
 - Open a Terminal and run:
 ```shell
 regedit
@@ -129,11 +149,6 @@ bcdedit /set hypervisorlaunchtype on
     - Folder: `C:\Program Files (x86)\Steam\`
     - Add any other folders that contain software that needs the full power of the system.
 
-## Disable system components from running in the background
-- Open Settings -> System -> System components.
-- For each of the components, click the 3 dots icon `···` on the right -> Advanced options.
-  - Set the Background component permissions option to Never.
-
 ## Disable some visual options
 - Open Settings -> System -> Advanced system settings.
 - Under Performance, click Settings.
@@ -166,11 +181,11 @@ powercfg.cpl
     - Click: `Restore default values`.
     - Go to: Processor power management, and configure:
       - Processor performance increase threshold: `90%`
-      - Processor performance time check interval: `12ms`
-      - Processor performance core parking min cores: `0%`.
+      - Processor performance time check interval: `20ms`
+      - Processor performance core parking min cores: `10%`.
         - This option indicates the percentage of cores that will never be turned off.
       - Processor performance core parking parked performance state: `Deep performance state`.
-      - Processor idle promote threshold: `100%`.
+      - Processor idle promote threshold: `90%`.
     - Click: OK.
 
 ## Prevent certain programs from changing the active power plan
