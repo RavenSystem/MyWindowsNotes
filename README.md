@@ -130,12 +130,12 @@ msinfo32
   - If enabled or activated:
     - In Terminal, run:
 ```shell
-bcdedit /set hypervisorlaunchtype off
+bcdedit -set hypervisorlaunchtype off
 ```
   - Restart your computer.
     - Note: To revert this change, open a Terminal and run:
 ```shell
-bcdedit /set hypervisorlaunchtype on
+bcdedit -set hypervisorlaunchtype on
 ```
 
 ## Minimize the impact of antivirus
@@ -159,13 +159,23 @@ bcdedit /set hypervisorlaunchtype on
     - Smooth edges of screen fonts.
   - Click OK.
 
+## Add the RavenSystem Ultimate power plan
+This power plan maximizes your computer's power and reduces latency. Ideal for gaming, virtual reality, and real-time simulation software.
+- Download the file [ravensystem_ultimate.pow](https://github.com/RavenSystem/MyWindowsNotes/raw/refs/heads/main/ravensystem_ultimate.pow).
+- Open a Terminal as Administrator (Right-click on its icon and Run as administrator) and run:
+```shell
+powercfg -import [path]/ravensystem_ultimate.pow
+powercfg.cpl
+```
+- Select **RavenSystem Ultimate** plan.
+
 ## Show the Maximum Performance power plan in the power options (Optional)
 - Open a Terminal and run:
 ```shell
 powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 ```
 
-## Improved Power Plan
+## Improved Power Plan (Optional)
 - Open a Terminal and run:
 ```shell
 powercfg -attributes SUB_PROCESSOR PERFINCTHRESHOLD -ATTRIB_HIDE
@@ -175,7 +185,7 @@ powercfg -attributes SUB_PROCESSOR CPPERF -ATTRIB_HIDE
 powercfg -attributes SUB_PROCESSOR IDLEPROMOTE -ATTRIB_HIDE
 powercfg.cpl
 ```
-- The recommended plan to maximize the computer's power is: **Balanced**.
+- The recommended plan to maximize the computer's power without a big consumption is: **Balanced**.
 - Click: Change plan settings (The settings only apply to the selected plan).
   - Click: Change advanced power settings.
     - Click: `Restore default values`.
@@ -192,7 +202,7 @@ powercfg.cpl
 - Some programs, such as SteamVR, change the active power plan, causing a loss of performance.
 - Open a Terminal and run:
 ```shell
-powercfg /l
+powercfg -l
 ```
 - Copy the GUID of the plan to always leave active.
 - Run:
