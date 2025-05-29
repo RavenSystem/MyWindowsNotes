@@ -90,7 +90,7 @@ irm "https://christitus.com/win" | iex
   - "Run Tweaks" abajo.
 - Esperar a que arriba a la derecha indique "Tweaks finished" y cerrarlo.
 
-## Activar la entrada de usuario automática (Autologin)
+## Activar la entrada de usuario automática (Opcional)
 - Abrir un Terminal y ejecutar:
 ```shell
 regedit
@@ -146,11 +146,6 @@ bcdedit /set hypervisorlaunchtype on
     - Carpeta: `C:\Archivos de programa (x86)\Steam\`
     - Añadir cualquier otra carpeta que contenga software que necesite toda la potencia del sistema.
 
-## Desactivar la ejecución en segundo plano de los componentes del sistema
-- Abrir Configuración -> Sistema -> Componentes del sistema.
-- Para cada uno de los componentes, pulsar el icono de los 3 puntos `···` a la derecha -> Opciones avanzadas.
-  - Establecer en Nunca la opción de los Permisos de componente en segundo plano.
-
 ## Desactivar algunas opciones visuales
 - Abrir Configuración -> Sistema -> Configuración avanzada del sistema.
 - En Rendimiento, pulsar Configuración.
@@ -190,7 +185,7 @@ powercfg.cpl
       - Umbral de aumento de nivel de inactividad de procesador: `100%`.
     - Pulsar: Aceptar.
 
-## Evitar que ciertos programas cambien el plan de energía activo
+## Evitar que ciertos programas cambien el plan de energía activo (Opcional)
 - Algunos programas, como SteamVR, cambian el plan de energía activo, provocando una pérdida de rendimiento.
 - Abrir un Terminal y ejecutar:
 ```shell
