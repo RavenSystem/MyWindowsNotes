@@ -70,9 +70,11 @@ ipconfig /release
 ```shell
 irm "https://christitus.com/win" | iex
 ```
-- Se abrirá una ventana: Pulsar en "Tweaks".
-  - Luego en "Standard".
-  - Además, en la izquierda, marcar:
+- Se abrirá una ventana: Hacer click en "Tweaks".
+  - Hacer click en "Standard".
+  - A la izquierda, descarmar:
+    - Create Restore Point.
+  - A la izquierda, marcar:
     - Disable Recall.
     - Debloat Edge.
     - Adobe Network Block.
