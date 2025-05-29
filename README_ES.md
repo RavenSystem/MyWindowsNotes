@@ -70,7 +70,24 @@ ipconfig /release
 ```shell
 irm "https://christitus.com/win" | iex
 ```
-- Se abrirá una ventana: Pulsar en "Tweaks", luego en "Standard", y por último, en "Run Tweaks" abajo.
+- Se abrirá una ventana: Pulsar en "Tweaks".
+  - Luego en "Standard".
+  - Además, en la izquierda, marcar:
+    - Disable Recall.
+    - Debloat Edge.
+    - Adobe Network Block.
+    - Adobe Debloat.
+    - Disable Tedero.
+    - Disable Background Apps.
+    - Disable Microsoft Copilot.
+    - Disable Intel MM (vPro LMS).
+    - Disable Notification Tray/Calendar.
+    - Disable Windows Platform Binary Table (WPBT).
+    - Set Classic Right-Click Menu.
+    - Remove Microsoft Edge.
+    - Remove OneDrive.
+    - Block Razer Software Installs.
+  - "Run Tweaks" abajo.
 - Esperar a que arriba a la derecha indique "Tweaks finished" y cerrarlo.
 
 ## Activar la entrada de usuario automática (Autologin)
