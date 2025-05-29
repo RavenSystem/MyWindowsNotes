@@ -91,6 +91,7 @@ irm "https://christitus.com/win" | iex
     - Block Razer Software Installs.
   - "Run Tweaks" abajo.
 - Esperar a que arriba a la derecha indique "Tweaks finished" y cerrarlo.
+- Reiniciar el equipo.
 
 ## Activar la entrada de usuario automática (Opcional)
 - Abrir un Terminal y ejecutar:
