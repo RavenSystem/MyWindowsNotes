@@ -28,11 +28,15 @@ Estas son simplemente mis anotaciones personales sobre cómo instalar y configur
 - No introducir aquí la clave de activación de Windows (Mejor activar Windows una vez instalado y configurado, aunque se puede dejar sin activar y todo funcionará sin restricciones, menos la parte de personalizar los colores y el fondo de escritorio).
 - Una vez que se haya instalado, se ejecutará el asistente inicial de configuración, preguntando el país:
   - Pulsar `Shift + F10` para abrir un Terminal.
-  - Ejecutar el siguiente comando (Si la distribución actual del teclado no permite escribir la barra `\`, se puede copiar y pegar con el ratón una del propio Terminal):
+  - Para evitar el paso obligatorio de usar una cuenta de Microsoft, hay que ejecutar el siguiente comando (Si la distribución actual del teclado no permite escribir la barra `\`, se puede copiar y pegar con el ratón una del propio Terminal):
 ```shell
 OOBE\BYPASSNRO
 ```
-   - Cuando el equipo de reinicie, desconectar el cable de red.
+  - Si el comando anterior no funciona, ejecutar el siguiente comando como alternativa:
+```shell
+reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_DWORD /d 1 /f shutdown /r /t 0
+```
+   - Cuando el equipo se reinicie, desconectar el cable de red.
       - También es posible dejarlo sin conexión abriendo de nuevo un Terminal (`Shift + F10`) y ejecutando:
 ```shell
 ipconfig /release
