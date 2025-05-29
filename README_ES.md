@@ -181,11 +181,11 @@ powercfg.cpl
     - Pulsar `Restaurar valores predeterminados del plan`.
     - Ir a: Administración de energía del procesador, y configurar:
       - Umbral de aumento de rendimiento de procesador: `90%`
-      - Intervalo de comprobación de tiempo de rendimiento de procesador: `12ms`
-      - Mínima detención de núcleos de rendimiento de procesador: `0%`.
+      - Intervalo de comprobación de tiempo de rendimiento de procesador: `20ms`
+      - Mínima detención de núcleos de rendimiento de procesador: `10%`.
         - Esta opción indica porcentualmente la cantidad de núcleos que nunca se van a apagar.
       - Estado de rendimiento detenido de la detención de núcleo de rendimiento de procesador: `Estado de rendimiento más profundo`.
-      - Umbral de aumento de nivel de inactividad de procesador: `100%`.
+      - Umbral de aumento de nivel de inactividad de procesador: `90%`.
     - Pulsar: Aceptar.
 
 ## Evitar que ciertos programas cambien el plan de energía activo (Opcional)
