@@ -28,9 +28,13 @@ These are just my personal notes on how to install and configure a Windows 11 PC
 - Do not enter the Windows activation key here (It is better to activate Windows once it is installed and configured, although you can leave it unactivated and everything will work without restrictions, except for the part of customizing the colors and the desktop background).
 - Once installed, the initial setup wizard will run, asking for the country:
   - Press `Shift + F10` to open a Terminal.
-  - Run the following command (If your current keyboard layout doesn't allow you to type the `\` slash, you can copy and paste one from the Terminal itself with the mouse):
+  - To avoid the mandatory step of using a Microsoft account, run the following command (If your current keyboard layout doesn't allow you to type the `\` slash, you can copy and paste one from the Terminal itself with the mouse):
 ```shell
 OOBE\BYPASSNRO
+```
+  - If the above command does not work, try the following command as an alternative:
+```shell
+reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_DWORD /d 1 /f shutdown /r /t 0
 ```
    - When the computer restarts, disconnect the network cable.
       - You can also take it offline by opening a Terminal again (`Shift + F10`) and running:
