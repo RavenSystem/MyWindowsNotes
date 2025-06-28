@@ -80,6 +80,7 @@ irm "https://christitus.com/win" | iex
     - Create Restore Point.
   - A la izquierda, marcar:
     - Disable Recall.
+    - Debloat Brave.
     - Debloat Edge.
     - Adobe Network Block.
     - Adobe Debloat.
@@ -90,7 +91,6 @@ irm "https://christitus.com/win" | iex
     - Disable Notification Tray/Calendar.
     - Disable Windows Platform Binary Table (WPBT).
     - Set Classic Right-Click Menu.
-    - Remove Microsoft Edge.
     - Remove OneDrive.
     - Block Razer Software Installs.
   - "Run Tweaks" abajo.
@@ -249,7 +249,7 @@ Win32PrioritySeparation
   - Pulsar Aceptar.
 
 ## NVIDIA: Panel de Control
-- Versión de controlador recomendada: 576.52
+- Versión de controlador recomendada: 576.80
 - Todo por defecto, excepto:
   - CUDA - Política de uso de la memoria del sistema: No usar la memoria del sistema como respaldo
   - Fotogramas preprocesados para la realidad virtual: Utilizar la configuración de la aplicación 3D
