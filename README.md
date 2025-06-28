@@ -80,6 +80,7 @@ irm "https://christitus.com/win" | iex
     - Create Restore Point.
   - At left, check:
     - Disable Recall.
+    - Debloat Brave.
     - Debloat Edge.
     - Adobe Network Block.
     - Adobe Debloat.
@@ -90,7 +91,6 @@ irm "https://christitus.com/win" | iex
     - Disable Notification Tray/Calendar.
     - Disable Windows Platform Binary Table (WPBT).
     - Set Classic Right-Click Menu.
-    - Remove Microsoft Edge.
     - Remove OneDrive.
     - Block Razer Software Installs.
   - Click on "Run Tweaks" at bottom.
