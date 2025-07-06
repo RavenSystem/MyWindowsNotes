@@ -124,23 +124,27 @@ netplwiz
 - Abrir: Seguridad del dispositivo -> Detalles de aislamiento del núcleo.
   - Desactivar: Integridad de memoria.
   - Desactivar: Protección de autoridad de seguridad local (LSA).
-- Reiniciar el equipo.
 - Abrir un Terminal y ejecutar:
+```shell
+regedit
+```
+- Ir a la clave:
+```
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard
+```
+- Establecer el valor a `0` de:
+```
+EnableVirtualizationBasedSecurity
+```
+- Cerrar el Editor de Registro.
+- Reiniciar el equipo.
+
+- Para comprobar si la Seguridad basada en virtualización está desactivada, abrir un Terminal y ejecutar:
 ```shell
 msinfo32
 ```
 - Seleccionar: Resumen del sistema.
   - A la derecha, buscar: Seguridad basada en virtualización.
-  - Si está habilitada o activada:
-    - En el Terminal, ejecutar:
-```shell
-bcdedit -set hypervisorlaunchtype off
-```
-  - Reiniciar el equipo.
-    - Nota: Para revertir este cambio, abrir un Terminal y ejecutar:
-```shell
-bcdedit -set hypervisorlaunchtype on
-```
 
 ## Minimizar el impacto del antivirus
 - Abrir Configuración -> Privacidad y seguridad -> Seguridad de Windows.
@@ -249,7 +253,7 @@ Win32PrioritySeparation
   - Pulsar Aceptar.
 
 ## NVIDIA: Panel de Control
-- Versión de controlador recomendada: 576.80
+- Versión de controlador recomendada: 576.88
 - Todo por defecto, excepto:
   - CUDA - Política de uso de la memoria del sistema: No usar la memoria del sistema como respaldo
   - Fotogramas preprocesados para la realidad virtual: Utilizar la configuración de la aplicación 3D
