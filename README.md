@@ -124,23 +124,27 @@ netplwiz
 - Open: Device security -> Core isolation details.
   - Disable: Memory integrity.
   - Disable: Local security authority (LSA) protection.
-- Restart the computer.
 - Open a Terminal and run:
+```shell
+regedit
+```
+- Go to the key:
+```
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard
+```
+- Set the value to `0` of:
+```
+EnableVirtualizationBasedSecurity
+```
+- Close the Registry Editor.
+- Restart the computer.
+
+- To check if Virtualization-based security is disaboeds, open a Terminal and run:
 ```shell
 msinfo32
 ```
 - Select: System summary.
   - On the right, search for: Virtualization-based security.
-  - If enabled or activated:
-    - In Terminal, run:
-```shell
-bcdedit -set hypervisorlaunchtype off
-```
-  - Restart your computer.
-    - Note: To revert this change, open a Terminal and run:
-```shell
-bcdedit -set hypervisorlaunchtype on
-```
 
 ## Minimize the impact of antivirus
 - Open Settings -> Privacy & security -> Windows Security.
@@ -249,7 +253,7 @@ Win32PrioritySeparation
   - Click OK.
 
 ## NVIDIA: Control Panel
-- Recommended driver version: 576.80
+- Recommended driver version: 576.88
 - All by default, except:
   - CUDA - System Memory Usage Policy: Do not use system memory as backup
   - Prerendered Frames for VR: Use 3D Application Settings
