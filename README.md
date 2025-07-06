@@ -139,7 +139,7 @@ EnableVirtualizationBasedSecurity
 - Close the Registry Editor.
 - Restart the computer.
 
-- To check if Virtualization-based security is disaboeds, open a Terminal and run:
+- To check if Virtualization-based security is disabled, open a Terminal and run:
 ```shell
 msinfo32
 ```
