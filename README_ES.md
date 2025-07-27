@@ -173,7 +173,7 @@ Este plan de energía maximiza la potencia del equipo y reduce la latencia. Idea
 - Abrir un Terminal como Administrador (Botón derecho sobre su icono y Ejecutar como administrador) y ejecutar:
 ```shell
 powercfg -d abc00000-0000-0000-0000-000000000011
-powercfg -import '[ruta absoluta completa]/ravensystem_ultimate.pow' abc00000-0000-0000-0000-000000000011
+powercfg -import '[ruta absoluta completa]\ravensystem_ultimate.pow' abc00000-0000-0000-0000-000000000011
 powercfg -setactive abc00000-0000-0000-0000-000000000011
 ```
 
