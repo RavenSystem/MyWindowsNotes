@@ -172,8 +172,7 @@ This power plan maximizes your computer's power and reduces latency. Ideal for g
 - Download the file [ravensystem_ultimate.pow](https://github.com/RavenSystem/MyWindowsNotes/raw/refs/heads/main/ravensystem_ultimate.pow).
 - Open a Terminal as Administrator (Right-click on its icon and Run as administrator) and run:
 ```shell
-powercfg -d abc00000-0000-0000-0000-000000000011
-powercfg -import '[complete absolut path]/ravensystem_ultimate.pow' abc00000-0000-0000-0000-000000000011
+powercfg -import '[complete absolut path]\ravensystem_ultimate.pow' abc00000-0000-0000-0000-000000000011
 powercfg -setactive abc00000-0000-0000-0000-000000000011
 ```
 
