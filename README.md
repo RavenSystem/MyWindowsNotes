@@ -256,7 +256,6 @@ Win32PrioritySeparation
 - All by default, except:
   - CUDA - System Memory Usage Policy: Do not use system memory as backup
   - Prerendered Frames for VR: Use 3D Application Settings
-  - Power Control Mode: Maximum Performance Preferred
   - Shader Cache Size: 100 GB
 
 ## AMD: Adrenaline Software
