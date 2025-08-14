@@ -91,6 +91,8 @@ irm "https://christitus.com/win" | iex
     - Disable Notification Tray/Calendar.
     - Disable Windows Platform Binary Table (WPBT).
     - Set Classic Right-Click Menu.
+    - Remove Home from explorer.
+    - Remove Gallery from explorer.
     - Remove OneDrive.
     - Block Razer Software Installs.
   - Click on "Run Tweaks" at bottom.
@@ -252,7 +254,7 @@ Win32PrioritySeparation
   - Click OK.
 
 ## NVIDIA: Control Panel
-- Recommended driver version: 580.88
+- Recommended driver version: 580.97
 - All by default, except:
   - CUDA - System Memory Usage Policy: Do not use system memory as backup
   - Prerendered Frames for VR: Use 3D Application Settings
