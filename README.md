@@ -86,6 +86,7 @@ irm "https://christitus.com/win" | iex
     - Adobe Debloat.
     - Disable Tedero.
     - Disable Background Apps.
+    - Disable Fullscreen Optimizations.
     - Disable Microsoft Copilot.
     - Disable Intel MM (vPro LMS).
     - Disable Notification Tray/Calendar.
