@@ -100,7 +100,7 @@ irm "https://christitus.com/win" | iex
 - Esperar a que arriba a la derecha indique "Tweaks finished" y cerrarlo.
 - Reiniciar el equipo.
 
-## Deshabilitar las Optimizaciones de Pantalla Completa
+## Deshabilitar las Optimizaciones de Pantalla Completa (Opcional)
 - Abrir un Terminal como Administrador (Botón derecho sobre su icono y Ejecutar como administrador) y ejecutar:
 ```shell
 reg add "HKCU\System\GameConfigStore" /v "GameDVR_Enabled" /t REG_DWORD /d "0" /f
