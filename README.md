@@ -100,7 +100,7 @@ irm "https://christitus.com/win" | iex
 - Wait for it to indicate "Tweaks finished" at the top right and close it.
 - Reboot the machine.
 
-## Disable Fullscreen Optimizations
+## Disable Fullscreen Optimizations (Optional)
 - Open a Terminal as Administrator (Right-click on its icon and Run as administrator) and run:
 ```shell
 reg add "HKCU\System\GameConfigStore" /v "GameDVR_Enabled" /t REG_DWORD /d "0" /f
