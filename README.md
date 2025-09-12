@@ -267,7 +267,7 @@ Win32PrioritySeparation
   - Click OK.
 
 ## NVIDIA: Control Panel
-- Recommended driver version: 581.15
+- Recommended driver version: 581.29
 - All by default, except:
   - CUDA - System Memory Usage Policy: Do not use system memory as backup
   - Prerendered Frames for VR: Use 3D Application Settings
