@@ -112,7 +112,7 @@ reg add "HKLM\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661
 
 ## Activar la entrada de usuario automática (Opcional)
 - Abrir un Terminal como Administrador (Botón derecho sobre su icono y Ejecutar como administrador) y ejecutar:
-```
+```shell
 reg add "HKLM\Software\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device" /v "DevicePasswordLessBuildVersion" /t REG_DWORD /d "0" /f
 netplwiz
 ```
