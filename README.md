@@ -103,7 +103,7 @@ irm "https://christitus.com/win" | iex
 ## Disable unnecessary Services
 - Open "Services" and set "Startup type: Disabled" of:
   - SysMain
-  - WIndows Search
+  - Windows Search
 
 ## Stop SearchHost.exe from opening WebView2 background processes
 - Open a Terminal as Administrator (Right-click on its icon and Run as administrator) and run:
