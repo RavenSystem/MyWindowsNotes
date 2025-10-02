@@ -100,16 +100,14 @@ irm "https://christitus.com/win" | iex
 - Wait for it to indicate "Tweaks finished" at the top right and close it.
 - Reboot the machine.
 
-## Disable Fullscreen Optimizations (Optional)
+## Stop SearchHost.exe from opening WebView2 background processes
 - Open a Terminal as Administrator (Right-click on its icon and Run as administrator) and run:
 ```shell
-reg add "HKCU\System\GameConfigStore" /v "GameDVR_Enabled" /t REG_DWORD /d "0" /f
-reg add "HKCU\System\GameConfigStore" /v "GameDVR_FSEBehaviorMode" /t REG_DWORD /d "2" /f
-reg add "HKCU\System\GameConfigStore" /v "GameDVR_FSEBehavior" /t REG_DWORD /d "2" /f
-reg add "HKCU\System\GameConfigStore" /v "GameDVR_HonorUserFSEBehaviorMode" /t REG_DWORD /d "1" /f
-reg add "HKCU\System\GameConfigStore" /v "GameDVR_DXGIHonorFSEWindowsCompatible" /t REG_DWORD /d "1" /f
-reg add "HKCU\System\GameConfigStore" /v "GameDVR_EFSEFeatureFlags" /t REG_DWORD /d "0" /f
-reg add "HKCU\System\GameConfigStore" /v "GameDVR_DSEBehavior" /t REG_DWORD /d "2" /f
+reg add "HKCU\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "EnabledState" /t REG_DWORD /d "1" /f
+reg add "HKCU\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "EnabledStateOptions" /t REG_DWORD /d "0" /f
+reg add "HKCU\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "Variant" /t REG_DWORD /d "0" /f
+reg add "HKCU\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "VariantPayload" /t REG_DWORD /d "0" /f
+reg add "HKCU\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "VariantPayloadKind" /t REG_DWORD /d "0" /f
 ```
 
 ## Enable automatic user login (Optional)
@@ -247,7 +245,7 @@ regedit
 ```
 HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\PriorityControl
 ```
-- Set the value to `1a` for general use or `24` Hexadecimal for RV use (Default is `2`) of:
+- Set the value to `1a` (Default is `2`) of:
 ```
 Win32PrioritySeparation
 ```
@@ -267,7 +265,7 @@ Win32PrioritySeparation
   - Click OK.
 
 ## NVIDIA: Control Panel
-- Recommended driver version: 581.29
+- Recommended driver version: 581.42
 - All by default, except:
   - CUDA - System Memory Usage Policy: Do not use system memory as backup
   - Prerendered Frames for VR: Use 3D Application Settings
