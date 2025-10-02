@@ -224,7 +224,7 @@ gpedit.msc
 - Click: Apply.
 
 ## Configure the process manager to prioritize foreground processes
-(Source: https://www.xbitlabs.com/win32priorityseparation-performance/)
+(Source: https://khorvie.tech/win32priorityseparation/)
 - Open a Terminal as Administrator (Right-click on its icon and Run as administrator) and run:
 ```shell
 reg add "HKLM\SYSTEM\ControlSet001\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "1a" /f
