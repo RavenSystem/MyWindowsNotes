@@ -116,8 +116,11 @@ reg add "HKLM\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661
 reg add "HKLM\Software\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device" /v "DevicePasswordLessBuildVersion" /t REG_DWORD /d "0" /f
 netplwiz
 ```
-
 - Desactivar la opción de que los usuarios tienen que introducir la contraseña y seguir las instrucciones en pantalla.
+   - Para deshacerlo:
+```shell
+reg add "HKLM\Software\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device" /v "DevicePasswordLessBuildVersion" /t REG_DWORD /d "2" /f
+```
 
 ## Desactivar la integridad de la memoria
 - Incrementa el rendimiento del equipo, a cambio de tener el nivel de seguridad de Windows 10.
