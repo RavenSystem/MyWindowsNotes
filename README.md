@@ -100,6 +100,11 @@ irm "https://christitus.com/win" | iex
 - Wait for it to indicate "Tweaks finished" at the top right and close it.
 - Reboot the machine.
 
+## Disable unnecessary Services
+- Open "Services" and set "Startup type: Disabled" of:
+  - SysMain
+  - WIndows Search
+
 ## Stop SearchHost.exe from opening WebView2 background processes
 - Open a Terminal as Administrator (Right-click on its icon and Run as administrator) and run:
 ```shell
