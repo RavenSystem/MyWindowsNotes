@@ -129,19 +129,10 @@ reg add "HKLM\Software\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device" 
 - Abrir: Seguridad del dispositivo -> Detalles de aislamiento del núcleo.
   - Desactivar: Integridad de memoria.
   - Desactivar: Protección de autoridad de seguridad local (LSA).
-- Abrir un Terminal y ejecutar:
+- Abrir un Terminal como Administrador (Botón derecho sobre su icono y Ejecutar como administrador) y ejecutar:
 ```shell
-regedit
+reg add "HKLM\System\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d "0" /f
 ```
-- Ir a la clave:
-```
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard
-```
-- Establecer el valor a `0` de:
-```
-EnableVirtualizationBasedSecurity
-```
-- Cerrar el Editor de Registro.
 - Reiniciar el equipo.
 
 - Para comprobar si la Seguridad basada en virtualización está desactivada, abrir un Terminal y ejecutar:
