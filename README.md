@@ -117,6 +117,10 @@ reg add "HKLM\Software\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device" 
 netplwiz
 ```
 - Disable the option that requires users to enter a password and follow the on-screen instructions.
+  - To revert it:
+```shell
+reg add "HKLM\Software\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device" /v "DevicePasswordLessBuildVersion" /t REG_DWORD /d "2" /f
+```
 
 ## Disable memory integrity
 - Increases the computer's performance, in exchange for having the Windows 10 security level.
