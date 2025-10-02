@@ -100,6 +100,11 @@ irm "https://christitus.com/win" | iex
 - Esperar a que arriba a la derecha indique "Tweaks finished" y cerrarlo.
 - Reiniciar el equipo.
 
+## Deshabilitar Servicios no necesarios
+- Abrir "Servicios" y establecer "Tipo de inicio: Deshabilitado" de:
+  - SysMain
+  - Windows Search
+
 ## Impedir que SearchHost.exe cree procesos de WebView2 en segundo plano
 - Abrir un Terminal como Administrador (Botón derecho sobre su icono y Ejecutar como administrador) y ejecutar:
 ```shell
