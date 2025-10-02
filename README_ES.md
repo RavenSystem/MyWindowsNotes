@@ -34,7 +34,7 @@ OOBE\BYPASSNRO
 ```
   - Si el comando anterior no funciona, ejecutar el siguiente comando como alternativa:
 ```shell
-reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_DWORD /d "1" /f shutdown /r /t 0
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE" /v BypassNRO /t REG_DWORD /d "1" /f shutdown /r /t 0
 ```
    - Cuando el equipo se reinicie, desconectar el cable de red.
       - También es posible dejarlo sin conexión abriendo de nuevo un Terminal (`Shift + F10`) y ejecutando:
@@ -103,23 +103,23 @@ irm "https://christitus.com/win" | iex
 ## Impedir que SearchHost.exe cree procesos de WebView2 en segundo plano
 - Abrir un Terminal como Administrador (Botón derecho sobre su icono y Ejecutar como administrador) y ejecutar:
 ```shell
-reg add "HKLM\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "EnabledState" /t REG_DWORD /d "1" /f
-reg add "HKLM\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "EnabledStateOptions" /t REG_DWORD /d "0" /f
-reg add "HKLM\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "Variant" /t REG_DWORD /d "0" /f
-reg add "HKLM\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "VariantPayload" /t REG_DWORD /d "0" /f
-reg add "HKLM\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "VariantPayloadKind" /t REG_DWORD /d "0" /f
+reg add "HKLM\SYSTEM\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "EnabledState" /t REG_DWORD /d "1" /f
+reg add "HKLM\SYSTEM\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "EnabledStateOptions" /t REG_DWORD /d "0" /f
+reg add "HKLM\SYSTEM\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "Variant" /t REG_DWORD /d "0" /f
+reg add "HKLM\SYSTEM\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "VariantPayload" /t REG_DWORD /d "0" /f
+reg add "HKLM\SYSTEM\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "VariantPayloadKind" /t REG_DWORD /d "0" /f
 ```
 
 ## Activar la entrada de usuario automática (Opcional)
 - Abrir un Terminal como Administrador (Botón derecho sobre su icono y Ejecutar como administrador) y ejecutar:
 ```shell
-reg add "HKLM\Software\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device" /v "DevicePasswordLessBuildVersion" /t REG_DWORD /d "0" /f
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device" /v "DevicePasswordLessBuildVersion" /t REG_DWORD /d "0" /f
 netplwiz
 ```
 - Desactivar la opción de que los usuarios tienen que introducir la contraseña y seguir las instrucciones en pantalla.
    - Para deshacerlo:
 ```shell
-reg add "HKLM\Software\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device" /v "DevicePasswordLessBuildVersion" /t REG_DWORD /d "2" /f
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device" /v "DevicePasswordLessBuildVersion" /t REG_DWORD /d "2" /f
 ```
 
 ## Desactivar la integridad de la memoria
@@ -131,7 +131,7 @@ reg add "HKLM\Software\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device" 
   - Desactivar: Protección de autoridad de seguridad local (LSA).
 - Abrir un Terminal como Administrador (Botón derecho sobre su icono y Ejecutar como administrador) y ejecutar:
 ```shell
-reg add "HKLM\System\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d "0" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d "0" /f
 ```
 - Reiniciar el equipo.
 
@@ -222,11 +222,11 @@ gpedit.msc
 (Fuente: https://www.xbitlabs.com/win32priorityseparation-performance/)
 - Abrir un Terminal como Administrador (Botón derecho sobre su icono y Ejecutar como administrador) y ejecutar:
 ```shell
-reg add "HKLM\System\ControlSet001\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "1a" /f
+reg add "HKLM\SYSTEM\ControlSet001\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "1a" /f
 ```
    - Para deshacerlo:
 ```shell
-reg add "HKLM\System\ControlSet001\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "2" /f
+reg add "HKLM\SYSTEM\ControlSet001\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "2" /f
 ```
 
 ## Desactivar la creación de puntos de restauración (Opcional)
