@@ -227,7 +227,7 @@ gpedit.msc
 (Fuente: https://khorvie.tech/win32priorityseparation/)
 - Abrir un Terminal como Administrador (Botón derecho sobre su icono y Ejecutar como administrador) y ejecutar:
 ```shell
-reg add "HKLM\SYSTEM\ControlSet001\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "1a" /f
+reg add "HKLM\SYSTEM\ControlSet001\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "2a" /f
 ```
    - Para deshacerlo:
 ```shell
