@@ -100,36 +100,23 @@ irm "https://christitus.com/win" | iex
 - Esperar a que arriba a la derecha indique "Tweaks finished" y cerrarlo.
 - Reiniciar el equipo.
 
-## Deshabilitar las Optimizaciones de Pantalla Completa (Opcional)
+## Impedir que SearchHost.exe cree procesos de WebView2 en segundo plano
 - Abrir un Terminal como Administrador (Botón derecho sobre su icono y Ejecutar como administrador) y ejecutar:
 ```shell
-reg add "HKCU\System\GameConfigStore" /v "GameDVR_Enabled" /t REG_DWORD /d "0" /f
-reg add "HKCU\System\GameConfigStore" /v "GameDVR_FSEBehaviorMode" /t REG_DWORD /d "2" /f
-reg add "HKCU\System\GameConfigStore" /v "GameDVR_FSEBehavior" /t REG_DWORD /d "2" /f
-reg add "HKCU\System\GameConfigStore" /v "GameDVR_HonorUserFSEBehaviorMode" /t REG_DWORD /d "1" /f
-reg add "HKCU\System\GameConfigStore" /v "GameDVR_DXGIHonorFSEWindowsCompatible" /t REG_DWORD /d "1" /f
-reg add "HKCU\System\GameConfigStore" /v "GameDVR_EFSEFeatureFlags" /t REG_DWORD /d "0" /f
-reg add "HKCU\System\GameConfigStore" /v "GameDVR_DSEBehavior" /t REG_DWORD /d "2" /f
+reg add "HKLM\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "EnabledState" /t REG_DWORD /d "1" /f
+reg add "HKLM\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "EnabledStateOptions" /t REG_DWORD /d "0" /f
+reg add "HKLM\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "Variant" /t REG_DWORD /d "0" /f
+reg add "HKLM\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "VariantPayload" /t REG_DWORD /d "0" /f
+reg add "HKLM\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "VariantPayloadKind" /t REG_DWORD /d "0" /f
 ```
 
 ## Activar la entrada de usuario automática (Opcional)
-- Abrir un Terminal y ejecutar:
-```shell
-regedit
+- Abrir un Terminal como Administrador (Botón derecho sobre su icono y Ejecutar como administrador) y ejecutar:
 ```
-- Ir a la clave:
-```
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device
-```
-- Establecer el valor a `0` (Por defecto es `2`) de:
-```
-DevicePasswordLessBuildVersion
-```
-- Cerrar el Editor de Registro.
-- En el Terminal, ejecutar:
-```shell
+reg add "HKLM\Software\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device" /v "DevicePasswordLessBuildVersion" /t REG_DWORD /d "2" /f
 netplwiz
 ```
+
 - Desactivar la opción de que los usuarios tienen que introducir la contraseña y seguir las instrucciones en pantalla.
 
 ## Desactivar la integridad de la memoria
@@ -247,7 +234,7 @@ regedit
 ```
 HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\PriorityControl
 ```
-- Establecer el valor a `1a` para uso general, o `24` Hexadecimal para RV (Por defecto es `2`) de:
+- Establecer el valor a `1a` (Por defecto es `2`) de:
 ```
 Win32PrioritySeparation
 ```
@@ -267,7 +254,7 @@ Win32PrioritySeparation
   - Pulsar Aceptar.
 
 ## NVIDIA: Panel de Control
-- Versión de controlador recomendada: 581.29
+- Versión de controlador recomendada: 581.42
 - Todo por defecto, excepto:
   - CUDA - Política de uso de la memoria del sistema: No usar la memoria del sistema como respaldo
   - Fotogramas preprocesados para la realidad virtual: Utilizar la configuración de la aplicación 3D
