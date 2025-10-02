@@ -229,19 +229,14 @@ gpedit.msc
 
 ## Configurar el gestor de procesos para priorizar los de primer plano
 (Fuente: https://www.xbitlabs.com/win32priorityseparation-performance/)
-- Abrir un Terminal y ejecutar:
+- Abrir un Terminal como Administrador (Botón derecho sobre su icono y Ejecutar como administrador) y ejecutar:
 ```shell
-regedit
+reg add "HKLM\System\ControlSet001\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "1a" /f
 ```
-- Ir a la clave:
+   - Para deshacerlo:
+```shell
+reg add "HKLM\System\ControlSet001\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "2" /f
 ```
-HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\PriorityControl
-```
-- Establecer el valor a `1a` (Por defecto es `2`) de:
-```
-Win32PrioritySeparation
-```
-- Cerrar el Editor de Registro.
 
 ## Desactivar la creación de puntos de restauración (Opcional)
 - Abrir Configuración -> Sistema -> Protección del sistema.
