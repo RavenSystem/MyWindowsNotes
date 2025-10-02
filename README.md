@@ -111,7 +111,7 @@ reg add "HKLM\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661
 ```
 
 ## Enable automatic user login (Optional)
-- Open a Terminal and run:
+- Open a Terminal as Administrator (Right-click on its icon and Run as administrator) and run:
 ```shell
 reg add "HKLM\Software\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device" /v "DevicePasswordLessBuildVersion" /t REG_DWORD /d "0" /f
 netplwiz
@@ -229,19 +229,14 @@ gpedit.msc
 
 ## Configure the process manager to prioritize foreground processes
 (Source: https://www.xbitlabs.com/win32priorityseparation-performance/)
-- Open a Terminal and run:
+- Open a Terminal as Administrator (Right-click on its icon and Run as administrator) and run:
 ```shell
-regedit
+reg add "HKLM\System\ControlSet001\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "1a" /f
 ```
-- Go to the key:
+  - To revert it:
+```shell
+reg add "HKLM\System\ControlSet001\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "2" /f
 ```
-HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\PriorityControl
-```
-- Set the value to `1a` (Default is `2`) of:
-```
-Win32PrioritySeparation
-```
-- Close the Registry Editor.
 
 ## Disable the creation of restore points (Optional)
 - Open Settings -> System -> System Protection.
