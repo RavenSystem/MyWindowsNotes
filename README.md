@@ -103,29 +103,17 @@ irm "https://christitus.com/win" | iex
 ## Stop SearchHost.exe from opening WebView2 background processes
 - Open a Terminal as Administrator (Right-click on its icon and Run as administrator) and run:
 ```shell
-reg add "HKCU\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "EnabledState" /t REG_DWORD /d "1" /f
-reg add "HKCU\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "EnabledStateOptions" /t REG_DWORD /d "0" /f
-reg add "HKCU\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "Variant" /t REG_DWORD /d "0" /f
-reg add "HKCU\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "VariantPayload" /t REG_DWORD /d "0" /f
-reg add "HKCU\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "VariantPayloadKind" /t REG_DWORD /d "0" /f
+reg add "HKLM\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "EnabledState" /t REG_DWORD /d "1" /f
+reg add "HKLM\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "EnabledStateOptions" /t REG_DWORD /d "0" /f
+reg add "HKLM\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "Variant" /t REG_DWORD /d "0" /f
+reg add "HKLM\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "VariantPayload" /t REG_DWORD /d "0" /f
+reg add "HKLM\System\ControlSet001\Control\FeatureManagement\Overrides\8\1694661260" /v "VariantPayloadKind" /t REG_DWORD /d "0" /f
 ```
 
 ## Enable automatic user login (Optional)
 - Open a Terminal and run:
 ```shell
-regedit
-```
-- Go to the key:
-```
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device
-```
-- Set the value to `0` (Default is `2`) of:
-```
-DevicePasswordLessBuildVersion
-```
-- Close the Registry Editor.
-- In the Terminal, run:
-```shell
+reg add "HKLM\Software\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device" /v "DevicePasswordLessBuildVersion" /t REG_DWORD /d "0" /f
 netplwiz
 ```
 - Disable the option that requires users to enter a password and follow the on-screen instructions.
