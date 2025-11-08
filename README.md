@@ -248,7 +248,7 @@ reg add "HKLM\SYSTEM\ControlSet001\Control\PriorityControl" /v "Win32PrioritySep
   - Click OK.
 
 ## NVIDIA: Control Panel
-- Recommended driver version: 581.57
+- Recommended driver version: Latest.
 - All by default, except:
   - CUDA - System Memory Usage Policy: Do not use system memory as backup
   - Prerendered Frames for VR: Use 3D Application Settings
