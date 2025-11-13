@@ -177,6 +177,11 @@ powercfg -import '[complete absolut path]\ravensystem_ultimate.pow' abc00000-000
 powercfg -setactive abc00000-0000-0000-0000-000000000011
 ```
 
+- To remove a previous installed power plan:
+```shell
+powercfg -d abc00000-0000-0000-0000-000000000011
+```
+
 ## Show the Maximum Performance power plan in the power options (Optional)
 - Open a Terminal and run:
 ```shell
