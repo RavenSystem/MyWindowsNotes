@@ -177,6 +177,11 @@ powercfg -import '[ruta absoluta completa]\ravensystem_ultimate.pow' abc00000-00
 powercfg -setactive abc00000-0000-0000-0000-000000000011
 ```
 
+- Eliminar un plan de energía instalado previamente:
+```shell
+powercfg -d abc00000-0000-0000-0000-000000000011
+```
+
 ## Mostrar el plan de energía de Máximo Rendimiento en las opciones de energía (Opcional)
 - Abrir un Terminal y ejecutar:
 ```shell
