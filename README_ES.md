@@ -79,14 +79,16 @@ irm "https://christitus.com/win" | iex
   - A la izquierda, descarmar:
     - Create Restore Point.
   - A la izquierda, marcar:
-    - Disable Recall.
-    - Debloat Brave.
-    - Debloat Edge.
     - Adobe Network Block.
     - Adobe Debloat.
-    - Disable Tedero.
+    - Block Razer Software Installs.
+    - Brave Debloat.
+    - Edge Debloat.
+    - Disable Edge.
     - Disable Background Apps.
     - Disable Fullscreen Optimizations.
+    - Disable Tedero.
+    - Disable Recall.
     - Disable Microsoft Copilot.
     - Disable Intel MM (vPro LMS).
     - Disable Notification Tray/Calendar.
@@ -95,9 +97,8 @@ irm "https://christitus.com/win" | iex
     - Remove Home from explorer.
     - Remove Gallery from explorer.
     - Remove OneDrive.
-    - Block Razer Software Installs.
   - "Run Tweaks" abajo.
-- Esperar a que arriba a la derecha indique "Tweaks finished" y cerrarlo.
+- Esperar a que indique "Tweaks finished".
 - Reiniciar el equipo.
 
 ## Deshabilitar Servicios no necesarios
