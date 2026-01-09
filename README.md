@@ -81,23 +81,20 @@ irm "https://christitus.com/win" | iex
     - Create Restore Point.
   - At left, check:
     - Adobe Network Block.
-    - Adobe Debloat.
     - Block Razer Software Installs.
     - Brave Debloat.
     - Edge Debloat.
     - Disable Edge.
+    - Make Edge Uninstallable via settings.
     - Disable Background Apps.
     - Disable Fullscreen Optimizations.
     - Disable Tedero.
-    - Disable Recall.
     - Disable Microsoft Copilot.
-    - Disable Intel MM (vPro LMS).
     - Disable Notification Tray/Calendar.
-    - Disable Windows Platform Binary Table (WPBT).
     - Set Classic Right-Click Menu.
+    - Disable Windows Platform Binary Table (WPBT).
     - Remove Home from explorer.
     - Remove Gallery from explorer.
-    - Remove OneDrive.
   - Click on "Run Tweaks" at bottom.
 - Wait for it to indicate "Tweaks finished".
 - Reboot the machine.
