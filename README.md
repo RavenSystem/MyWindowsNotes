@@ -210,7 +210,7 @@ powercfg.cpl
       - Processor idle promote threshold: `90%`.
     - Click: OK.
 
-## Prevent certain programs from changing the active power plan
+## Prevent certain programs from changing the active power plan (Optional)
 - Some programs, such as SteamVR, change the active power plan, causing a loss of performance.
 - Open a Terminal and run:
 ```shell
