@@ -51,7 +51,7 @@ ipconfig /release
 (Source: [https://github.com/Raphire/Win11Debloat](https://github.com/Raphire/Win11Debloat))
 - Open a Terminal as Administrator (Right-click on its icon and Run as administrator) and run:
 ```shell
-& ([scriptblock]::Create((irm "https://win11debloat.raphi.re/"))) -RunDefaults -RemoveCommApps -RemoveW11Outlook -RemoveGamingApps -DisableFastStartup -DisableDVR -DisableLockscreenTips -ClearStartAllUsers -RevertContextMenu -ShowHiddenFolders -HideTaskview
+& ([scriptblock]::Create((irm "https://debloat.raphi.re/"))) -RunDefaults -RemoveCommApps -RemoveW11Outlook -RemoveGamingApps -DisableFastStartup -DisableDVR -DisableLockscreenTips -ClearStartAllUsers -RevertContextMenu -ShowHiddenFolders -HideTaskview
 ```
 - Then, run:
 ```shell
