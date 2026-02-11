@@ -83,18 +83,18 @@ irm "https://christitus.com/win" | iex
     - Adobe Network Block.
     - Block Razer Software Installs.
     - Brave Debloat.
-    - Edge Debloat.
-    - Disable Edge.
-    - Make Edge Uninstallable via settings.
     - Disable Background Apps.
     - Disable Fullscreen Optimizations.
     - Disable Tedero.
     - Disable Microsoft Copilot.
+    - Disable Storage Sense.
     - Disable Notification Tray/Calendar.
-    - Set Classic Right-Click Menu.
-    - Disable Windows Platform Binary Table (WPBT).
-    - Remove Home from explorer.
+    - Edge Debloat.
+    - Remove Microsoft Edge.
     - Remove Gallery from explorer.
+    - Remove Home from explorer.
+    - Remove OneDrive.
+    - Set Classic Right-Click Menu.
   - "Run Tweaks" abajo.
 - Esperar a que indique "Tweaks finished".
 - Reiniciar el equipo.
