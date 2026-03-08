@@ -77,23 +77,25 @@ irm "https://christitus.com/win" | iex
 ```
 - Se abrirá una ventana: Hacer click en "Tweaks".
   - Hacer click en "Standard".
-  - A la izquierda, descarmar:
+  - A la izquierda, desmarcar:
     - Create Restore Point.
   - A la izquierda, marcar:
+    - Remove Widgets.
     - Adobe Network Block.
     - Block Razer Software Installs.
     - Brave Debloat.
     - Disable Background Apps.
     - Disable Fullscreen Optimizations.
-    - Disable Tedero.
     - Disable Microsoft Copilot.
-    - Disable Storage Sense.
     - Disable Notification Tray/Calendar.
+    - Disable Storage Sense.
+    - Disable Tedero.
     - Edge Debloat.
-    - Remove Microsoft Edge.
     - Remove Gallery from explorer.
     - Remove Home from explorer.
+    - Remove Microsoft Edge.
     - Remove OneDrive.
+    - Remove Xbox & Gaming Components
     - Set Classic Right-Click Menu.
   - "Run Tweaks" abajo.
 - Esperar a que indique "Tweaks finished".
