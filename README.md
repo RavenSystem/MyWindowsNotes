@@ -80,20 +80,22 @@ irm "https://christitus.com/win" | iex
   - At left, uncheck:
     - Create Restore Point.
   - At left, check:
+    - Remove Widgets.
     - Adobe Network Block.
     - Block Razer Software Installs.
     - Brave Debloat.
     - Disable Background Apps.
     - Disable Fullscreen Optimizations.
-    - Disable Tedero.
     - Disable Microsoft Copilot.
-    - Disable Storage Sense.
     - Disable Notification Tray/Calendar.
+    - Disable Storage Sense.
+    - Disable Tedero.
     - Edge Debloat.
-    - Remove Microsoft Edge.
     - Remove Gallery from explorer.
     - Remove Home from explorer.
+    - Remove Microsoft Edge.
     - Remove OneDrive.
+    - Remove Xbox & Gaming Components
     - Set Classic Right-Click Menu.
   - Click on "Run Tweaks" at bottom.
 - Wait for it to indicate "Tweaks finished".
