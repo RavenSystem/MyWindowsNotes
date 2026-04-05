@@ -80,6 +80,7 @@ irm "https://christitus.com/win" | iex
   - At left, uncheck:
     - Create Restore Point.
   - At left, check:
+    - Disable Microsoft Store search results.
     - Remove Widgets.
     - Adobe Network Block.
     - Block Razer Software Installs.
