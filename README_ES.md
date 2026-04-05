@@ -80,6 +80,7 @@ irm "https://christitus.com/win" | iex
   - A la izquierda, desmarcar:
     - Create Restore Point.
   - A la izquierda, marcar:
+    - Disable Microsoft Store search results.
     - Remove Widgets.
     - Adobe Network Block.
     - Block Razer Software Installs.
