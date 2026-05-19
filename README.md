@@ -78,26 +78,28 @@ irm "https://christitus.com/win" | iex
 - A window will open: Click on "Tweaks".
   - Click on "Standard".
   - At left, uncheck:
-    - Create Restore Point.
+    - Restore Point - Create.
   - At left, check:
-    - Disable Microsoft Store search results.
-    - Remove Widgets.
-    - Adobe Network Block.
-    - Block Razer Software Installs.
-    - Brave Debloat.
-    - Disable Background Apps.
-    - Disable Fullscreen Optimizations.
-    - Disable Microsoft Copilot.
-    - Disable Notification Tray/Calendar.
-    - Disable Storage Sense.
-    - Disable Tedero.
-    - Edge Debloat.
-    - Remove Gallery from explorer.
-    - Remove Home from explorer.
-    - Remove Microsoft Edge.
-    - Remove OneDrive.
-    - Remove Xbox & Gaming Components
-    - Set Classic Right-Click Menu.
+    - Microsoft Store Recommended Search Results - Disable.
+    - Widgets - Remove.
+    - Adobe URL Block List - Enable.
+    - Background Apps - Disable.
+    - Brave Browser - Debloat.
+    - File Explorer Gallery - Disable.
+    - File Explorer Home - Disable.
+    - Fullscreen Optimizations - Disable.
+    - Microsoft Copilot - Disable.
+    - Microsoft Edge - Debloat.
+    - Microsoct Edge - Remove.
+    - Microsoft OneDrive - Remove.
+    - Razer Software Auto-Install - Disable.
+    - RDP Unsigned File Warnings - Disable.
+    - Right-Click Menu Previous Layout - Enable.
+    - Storage Sense - Disable.
+    - System Tray Notifications & Calendar - Disable.
+    - Tedero - Disable.
+    - Unwanted Pre-Installed Apps - Remove.
+    - Xbox & Gaming Components - Remove.
   - Click on "Run Tweaks" at bottom.
 - Wait for it to indicate "Tweaks finished".
 - Reboot the machine.
