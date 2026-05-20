@@ -85,10 +85,8 @@ irm "https://christitus.com/win" | iex
     - Adobe URL Block List - Enable.
     - Background Apps - Disable.
     - Brave Browser - Debloat.
-    - File Explorer Gallery - Disable.
-    - File Explorer Home - Disable.
+    - File Explorer Home and Gallery - Disable.
     - Fullscreen Optimizations - Disable.
-    - Microsoft Copilot - Disable.
     - Microsoft Edge - Debloat.
     - Microsoct Edge - Remove.
     - Microsoft OneDrive - Remove.
@@ -98,7 +96,7 @@ irm "https://christitus.com/win" | iex
     - Storage Sense - Disable.
     - System Tray Notifications & Calendar - Disable.
     - Tedero - Disable.
-    - Unwanted Pre-Installed Apps - Remove.
+    - Windows AI - Disable.
     - Xbox & Gaming Components - Remove.
   - "Run Tweaks" abajo.
 - Esperar a que indique "Tweaks finished".
