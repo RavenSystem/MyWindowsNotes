@@ -80,6 +80,8 @@ irm "https://christitus.com/win" | iex
   - A la izquierda, desmarcar:
     - Restore Point - Create.
   - A la izquierda, marcar:
+    - Activity History - Disable.
+    - Bitlocker - Disable.
     - Microsoft Store Recommended Search Results - Disable.
     - Widgets - Remove.
     - Adobe URL Block List - Enable.
