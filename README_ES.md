@@ -83,6 +83,7 @@ irm "https://christitus.com/win" | iex
     - Activity History - Disable.
     - Bitlocker - Disable.
     - Microsoft Store Recommended Search Results - Disable.
+    - Prevent Device Companion Apps.
     - Widgets - Remove.
     - Adobe URL Block List - Enable.
     - Background Apps - Disable.
@@ -99,7 +100,6 @@ irm "https://christitus.com/win" | iex
     - System Tray Notifications & Calendar - Disable.
     - Tedero - Disable.
     - Windows AI - Disable.
-    - Xbox & Gaming Components - Remove.
   - "Run Tweaks" abajo.
 - Esperar a que indique "Tweaks finished".
 - Reiniciar el equipo.
