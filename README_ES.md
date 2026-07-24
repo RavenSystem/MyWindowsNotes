@@ -243,6 +243,16 @@ reg add "HKLM\SYSTEM\ControlSet001\Control\PriorityControl" /v "Win32PrioritySep
 reg add "HKLM\SYSTEM\ControlSet001\Control\PriorityControl" /v "Win32PrioritySeparation" /t REG_DWORD /d "2" /f
 ```
 
+## Activar Global Timer Resolution
+- Abrir un Terminal como Administrador (Botón derecho sobre su icono y Ejecutar como administrador) y ejecutar:
+```shell
+New-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\kernel' -Name 'GlobalTimerResolutionRequests' -PropertyType DWord -Value 1 -Force
+```
+  - Para deshacerlo::
+```shell
+Remove-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\kernel' -Name 'GlobalTimerResolutionRequests' -Force
+```
+
 ## Desactivar la creación de puntos de restauración (Opcional)
 - Abrir Configuración -> Sistema -> Protección del sistema.
   - Pulsar Configurar y seleccionar: Deshabilitar protección del sistema.
