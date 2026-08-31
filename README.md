@@ -89,7 +89,6 @@ irm "https://christitus.com/win" | iex
     - Background Apps - Disable.
     - Brave Browser - Debloat.
     - File Explorer Home and Gallery - Disable.
-    - Fullscreen Optimizations - Disable.
     - Microsoft Edge - Debloat.
     - Microsoct Edge - Remove.
     - Microsoft OneDrive - Remove.
