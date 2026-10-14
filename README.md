@@ -89,6 +89,7 @@ irm "https://christitus.com/win" | iex
     - Background Apps - Disable.
     - Brave Browser - Debloat.
     - File Explorer Home and Gallery - Disable.
+    - Logitech Download Assistant Auto-Install - Disable.
     - Microsoft Edge - Debloat.
     - Microsoct Edge - Remove.
     - Microsoft OneDrive - Remove.
