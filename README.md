@@ -55,7 +55,7 @@ ipconfig /release
 ```
 - Then, run:
 ```shell
-& ([scriptblock]::Create((irm "https://win11debloat.raphi.re/"))) -CLI
+& ([scriptblock]::Create((irm "https://debloat.raphi.re/"))) -CLI
 ```
 - Select option `3`.
 - Check: Only show installed apps.
