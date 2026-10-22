@@ -57,7 +57,7 @@ ipconfig /release
 ```shell
 & ([scriptblock]::Create((irm "https://debloat.raphi.re/"))) -CLI
 ```
-- Select option `3`.
+- Select option `2`.
 - Check: Only show installed apps.
 - Select:
   - Microsoft.Edge
