@@ -80,7 +80,6 @@ irm "https://christitus.com/win" | iex
   - A la izquierda, desmarcar:
     - Restore Point - Create.
   - A la izquierda, marcar:
-    - Activity History - Disable.
     - Bitlocker - Disable.
     - Microsoft Store Recommended Search Results - Disable.
     - Prevent Device Companion Apps.
@@ -97,6 +96,7 @@ irm "https://christitus.com/win" | iex
     - RDP Unsigned File Warnings - Disable.
     - Right-Click Menu Previous Layout - Enable.
     - Storage Sense - Disable.
+    - svchost.exe Splitting - Disable.
     - System Tray Notifications & Calendar - Disable.
     - Tedero - Disable.
     - Windows AI - Disable.
