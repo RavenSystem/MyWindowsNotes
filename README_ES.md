@@ -34,6 +34,10 @@ OOBE\BYPASSNRO
 ```
   - Si el comando anterior no funciona, ejecutar el siguiente comando como alternativa:
 ```shell
+start ms-cxh:localonly
+```
+  - Si el comando anterior no funciona, ejecutar el siguiente comando como alternativa:
+```shell
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE" /v BypassNRO /t REG_DWORD /d "1" /f
 shutdown /r /t 0
 ```
